@@ -15,7 +15,7 @@ Grâce à WhatsRun, on peut connaitre les différentes technologies utilisés pa
 
 <br>
 
-![alt text](../images/todolistme.png "Technologies utilisées sur todolistme.net")  
+![alt text](../img/Capture.PNG "Technologies utilisées sur todolistme.net")  
 
 <br>
 
