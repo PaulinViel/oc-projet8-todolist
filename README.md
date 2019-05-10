@@ -4,11 +4,11 @@
 
 Première erreur : faute de frappe dans le fichier [controller.js](js/controller.js) :  
 
-`	Controller.prototype.adddItem = function (title) { 	`
+`	Controller.prototype.adddItem = function (title) 	`
 
 Après correction :  
 
-`	Controller.prototype.addItem = function (title) { 	`
+`	Controller.prototype.addItem = function (title) 	`
 
 Deuxieme erreur : conflit potentiel entre deux IDs (il est possible d'avoir des doublons) dans le fichier [store.js](js/store.js) :
 
@@ -85,11 +85,14 @@ Après correction :
         }
     };
     
-Suppression complète de la logique avec les var newId et charset, à la place, nous utilisons Date.now() qui générera un Id unique en fonctionne de la date/heure actuelle (à la milliseconde près). 
+- Suppression complète de la logique avec les var newId et charset, à la place, nous utilisons Date.now() qui générera un Id unique en fonctionne de la date/heure actuelle (à la milliseconde près).
+
 <br>
-En cas de scaling de l'application (utilisations par plusieurs dizaines de personnes sur un même compte par exemple), pour assurer -autant que possible- un Id unique dans le cas ou deux personnes générerait un nouveau todo à la même milliseconde, il est recommandé d'utiliser l'algorithme de Fisher–Yates, qui demande bien plus de ressources mais est l'une des solutions les plus adaptées pour générer un iD unique.
 
+- En cas de scaling de l'application (utilisations par plusieurs dizaines de personnes sur un même compte par exemple), pour assurer -autant que possible- un Id unique dans le cas ou deux personnes générerait un nouveau todo à la même milliseconde, il est recommandé d'utiliser l'algorithme de Fisher–Yates, qui demande bien plus de ressources mais est l'une des solutions les plus adaptées pour générer un iD unique.
 
+<br>
+<br>
 D'autres améliorations ont été réalisées :
 
 Dans le fichier [controller.js](js/controller.js), deux boucles while sont inutiles :
