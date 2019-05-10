@@ -27,7 +27,7 @@ se rendre compte de la chaîne de chargement non maitrisée ainsi que des possib
 
 <br>
 
-![alt text](../images/request_map.png "Request Map de totolistme")  
+![alt text](../img/requestmap.png "Request Map de totolistme")  
 <br> 
 
 ## Performance du site
