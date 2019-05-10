@@ -11,7 +11,7 @@
 
 ****
 
-Grâce à WhatsRun, on peut connaitre les différentes technologies utilisés par le site :  
+L'utilisation de WhatsRun, nous a permit de pouvoir analyser les technologies utilisés par le site :  
 
 <br>
 
