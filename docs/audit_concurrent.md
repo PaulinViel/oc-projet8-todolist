@@ -22,8 +22,8 @@ L'utilisation de WhatsRun, nous a permit de pouvoir analyser les technologies ut
 **Request Map**
 ***
 
-Le mapping du concurrent permet aussi de connaitre l'ensemble des Thirds Parties chargées. Cela permet de 
-se rendre compte de la chaîne de chargement non maitrisée ainsi que des possibles fuites de données.
+La request map de todolist.net nous permet d'observer l'ensemble des interactions avec parties tiers.
+Nous pouvons donc facilement constater d'ou viennent une partie des soucis de chargement et de ralentissement du site. 
 
 <br>
 
