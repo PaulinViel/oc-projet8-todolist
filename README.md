@@ -148,8 +148,7 @@ Après correction :
            callback.call(this, todos);
        };
 
-La première boucle for servait juste à attribuer à todoId la valeur de todos[i].id, ce qui n'est pas nécessaire vu que la seconde boucle 
-permet de faire la même chose en se servant de l'id reçu.
+- La première boucle for servant simplement à attribuer à todoId la valeur de todos[i].id, celle-ci n'est pas nécessaire vu que la seconde boucle permet d'obtenir le même résultat en utilisant directement l'argument id reçu.
         
 Plusieurs autres optimisations on été réalisées/considérées en cas de scaling, vous les trouverez dans le document [audit](docs/audit_todos.md).
 
