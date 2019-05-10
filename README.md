@@ -94,7 +94,7 @@ Après correction :
 <br>
 <br>
 D'autres améliorations ont été réalisées :
-
+<br>
 Dans le fichier [controller.js](js/controller.js), deux boucles while sont inutiles :
        
         while (title[0] === " ") {
@@ -151,8 +151,7 @@ Après correction :
 La première boucle for servait juste à attribuer à todoId la valeur de todos[i].id, ce qui n'est pas nécessaire vu que la seconde boucle 
 permet de faire la même chose en se servant de l'id reçu.
         
-En outre, j'ai fait des optimisations que l'on peut trouver dans le fichier 
-[audit](docs/audit_todos.md).
+Plusieurs autres optimisations on été réalisées/considérées en cas de scaling, vous les trouverez dans le document [audit](docs/audit_todos.md).
 
 
 ## Etape 2 : Où sont les tests ?!
