@@ -67,7 +67,7 @@ Second rapport (LightHouse):
 
 - Ici nous pouvons voir en partie d'ou vient ce temps de début d'affichage : les scripts et les images.
 
-Dans la répartition du poids du ralentissement, le premier coupable est le script, il est clairement nécessaire de réduire sa taille et de l'optimiser autant que possible. Le second coupable est les images, il pourrait déjà etre utile de combiner les petites images dans une sprite CSS pour réduire le nombre de fichiers que le navigateur doit télécharger et donc accélèrer donc le chargement. On constate aussi que beaucoup d'images sont appelées par des requêtes externes, ce qui ralentis évidemment beaucoup le chargement du site. Si possible il vaudrait mieux les héberger dans le back-end si possible afin de limiter les calls externes. 
+Dans la répartition du poids du ralentissement, le premier coupable est le script, il est clairement nécessaire de réduire sa taille et de l'optimiser autant que possible. Le second coupable est les images, il pourrait déjà etre utile de combiner les petites images dans une sprite CSS pour réduire le nombre de fichiers que le navigateur doit télécharger et donc accélèrer donc le chargement. On constate aussi que beaucoup d'images sont appelées par des requêtes externes, ce qui ralentis évidemment beaucoup le chargement du site. Si possible il vaudrait mieux les héberger dans le back-end si possible afin de limiter les calls externes. Pour les images non externes, il faudrait étudier la possibilité de les compresser, ou de changer leur format vers quelque chose de plus léger et optimiser
 
 Il serait aussi très utile d'utiliser un système de mise en cache des différentes images permettra de gagner encore plus de temps. 
 
@@ -77,21 +77,20 @@ Il serait aussi très utile d'utiliser un système de mise en cache des différe
 
 <br>
 
-Dans ce tableau reprenant la répartition par domaines nous constatons plusieurs problèmes.
+Dans ce tableau reprenant la répartition par domaines nous constatons plusieurs problèmes .
 
-Premièrement, Jquery est chargé à chaque fois, plusieurs solutions sont possible : une mise à jour de Jquery -les version plus récentes sont bien plus performantes-, utiliser un fichier minifier -celui-ci étant moins lourd, le call sera plus rapide- ou utiliser du JavaScript ce qui éliminerait tout simplement le besoin de Jquery mais demanderait du temps de développementn supplémentaire.
+Premièrement, Jquery est chargé à chaque fois, plusieurs solutions sont possible : une mise à jour de Jquery -les version plus récentes sont bien plus performantes-, utiliser un fichier minifier -celui-ci étant moins lourd, le call sera plus rapide- ou utiliser du JavaScript ce qui éliminerait tout simplement le besoin de Jquery mais demanderait du temps de développemennt supplémentaire.
+
+Deuxièmement, nous constatons qu'il y a beaucoup de calls externes dont l'utilité n'est pas assurée et qui ralentissent beaucoup le site pour un gain possiblement très faible. En particulier les calls automatiques vers les réseaux sociaux et tout les service Google. Si tout ces calls externes sont réellement essentiel, peut être pourrait-il être envisageable de déclencher certains d'entre eux grace a des évènements particulier et non systématiquement au chargement. Le mieux serait évidemment de réduire leur nombre.
 
 <br>
 
 Résumé des points à modifier pour améliorer la performance du site :
 
-| Améliorations                     |     Gain                                                                                         | Difficultés (sur 5) |
-| :------------                     | :-------------:                                                                                  | :-------------:     | 
-|   Update la version de JQUERY     |   Correction de bugs divers, des problèmes de performance + Augmente la rapidité d'execution     | :star:              |
-|   Utiliser du javascript pur      |   Economie de temps --> Plus de chargement de Jquery à chaque fois                               | :star: :star: :star:|
-|   Compression des images          | Economie de temps --> poids des images plus légers                                               | :star:              |
-|   Utilisation du cache            | Economie de temps --> moins de chargement intempestif                                            | :star: :star:       |
-|   Minifier Jquery-ui              |   Chargement plus rapide de la page car poids des fichiers moins importants                      | :star: :star:       |
+- Mettre à jour, minifier ou supprimer Jquery
+- Optimiser le code JavaScript 
+- Retravailler les images (réduire la taille, compresser, changer de format)
+- Supprimer autant que possible les calls externes vers d'autres plateformes, ou au pire ne les déclencher que quand cela est nécessaire et non à chaque chargement.
 
 
 ## Audit du site
