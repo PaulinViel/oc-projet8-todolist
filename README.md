@@ -175,7 +175,7 @@ Les différents tests modifiés sont trouvables aux lignes :
 
 Réalisation d'un audit de performance sur site concurrent -300 à 500 mots-.  
 
-L'audit est disponible [ici](docs/audit_concurrent.md).
+L'audit complet est disponible [ici](docs/audit_concurrent.md).
 
 ## Etape 4 : Améliorez le projet
 
