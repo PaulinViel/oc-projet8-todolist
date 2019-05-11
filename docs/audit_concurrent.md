@@ -77,27 +77,13 @@ Il serait aussi très utile d'utiliser un système de mise en cache des différe
 
 <br>
 
-On peut voir que Jquery est chargé à chaque fois aussi (cf. image suivante)
+Dans ce tableau reprenant la répartition par domaines nous constatons plusieurs problèmes.
+
+Premièrement, Jquery est chargé à chaque fois, plusieurs solutions sont possible : une mise à jour de Jquery -les version plus récentes sont bien plus performantes-, utiliser un fichier minifier -celui-ci étant moins lourd, le call sera plus rapide- ou utiliser du JavaScript ce qui éliminerait tout simplement le besoin de Jquery mais demanderait du temps de développementn supplémentaire.
 
 <br>
 
-
-
-![alt text](../images/jquery_coverage.png)
-
-
-<br>
-
-Pour améliorer ce point ci, on peut :
-
-| Améliorations                    |     Gain                                                                                         |
-| :------------                    | :-------------:                                                                                  | 
-|   Update la version de JQUERY    |   Correction de bugs divers, des problèmes de performance + Augmente la rapidité d'execution     |
-|   Utiliser du javascript pur     |   Economie de temps --> Plus de chargement de Jquery à chaque fois                               |
-|   Minifier Jquery-ui             |   Chargement plus rapide de la page car poids des fichiers moins importants                      |
-
-
-En résumé pour améliorer la performance du site, il faudra faire :
+Résumé des points à modifier pour améliorer la performance du site :
 
 | Améliorations                     |     Gain                                                                                         | Difficultés (sur 5) |
 | :------------                     | :-------------:                                                                                  | :-------------:     | 
