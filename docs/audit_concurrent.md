@@ -64,9 +64,12 @@ Second rapport (LightHouse):
 
 <br>
 
-Pour réduire le temps d'affichage, la bonne technique serait de réduire l'image au minimum puis de la compresser
- et ensuite d'utiliser le background-repeat en CSS. Ceci permettra d'avoir une image avec un poids
- plus négligeable et d'accelerer le chargement de la page .  
+Ici nous pouvons voir en partie d'ou vient ce temps de début d'affichage : les scripts et les images.
+
+Dans la répartition du poids du ralentissement, le premier coupable est le script, il est clairement nécessaire de réduire sa taille et de l'optimiser autant que possible. Le second coupable est les images, il pourrait déjà etre utile de combiner les petites images dans une sprite CSS pour réduire le nombre de fichiers que le navigateur doit télécharger et donc accélèrer donc le chargement. On constate aussi que beaucoup d'images sont appelées par des requêtes externes, ce qui ralentis évidemment beaucoup le chargement du site. Si possible il vaudrait mieux les héberger dans le back-end si possible afin de limiter les calls externes. 
+
+
+
 En outre, la mise en cache des différentes images permettra de gagner encore plus de temps 
 (via un fichier en htaccess)
 
