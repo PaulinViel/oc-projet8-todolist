@@ -56,6 +56,7 @@ Second rapport (LightHouse):
 ![alt text](../img/concurrentSpeed2.PNG)  
 
 <br>
+
 - Après observation de ces deux exemples nous constatons des différences, en particulier le début d'affichage, Dareboost se situe à 0.87sec alors que celui de LightHouse se situe à 1.6sec. Il est normal d'avoir des différences, y comprit en utilisant le même outil. Malgré ces différences, les deux sont d'accord sur un point : la fin de chargement est trop longue, 3.40 secs pour Dareboost et 5.4secs pour LightHouse. Une fois encore nous constatons des différences, mais même le meilleurs cas reste bien trop long pour une application relativement simple.
 
 <br>
@@ -64,14 +65,12 @@ Second rapport (LightHouse):
 
 <br>
 
-Ici nous pouvons voir en partie d'ou vient ce temps de début d'affichage : les scripts et les images.
+- Ici nous pouvons voir en partie d'ou vient ce temps de début d'affichage : les scripts et les images.
 
 Dans la répartition du poids du ralentissement, le premier coupable est le script, il est clairement nécessaire de réduire sa taille et de l'optimiser autant que possible. Le second coupable est les images, il pourrait déjà etre utile de combiner les petites images dans une sprite CSS pour réduire le nombre de fichiers que le navigateur doit télécharger et donc accélèrer donc le chargement. On constate aussi que beaucoup d'images sont appelées par des requêtes externes, ce qui ralentis évidemment beaucoup le chargement du site. Si possible il vaudrait mieux les héberger dans le back-end si possible afin de limiter les calls externes. 
 
+Il serait aussi très utile d'utiliser un système de mise en cache des différentes images permettra de gagner encore plus de temps. 
 
-
-En outre, la mise en cache des différentes images permettra de gagner encore plus de temps 
-(via un fichier en htaccess)
 
 <br>
 
