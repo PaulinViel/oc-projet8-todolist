@@ -77,7 +77,7 @@ Il serait aussi très utile d'utiliser un système de mise en cache des différe
 
 <br>
 
-Dans ce tableau reprenant la répartition par domaines nous constatons plusieurs problèmes .
+- Dans ce tableau reprenant la répartition par domaines nous constatons plusieurs problèmes .
 
 Premièrement, Jquery est chargé à chaque fois, plusieurs solutions sont possible : une mise à jour de Jquery -les version plus récentes sont bien plus performantes-, utiliser un fichier minifier -celui-ci étant moins lourd, le call sera plus rapide- ou utiliser du JavaScript ce qui éliminerait tout simplement le besoin de Jquery mais demanderait du temps de développemennt supplémentaire.
 
