@@ -38,7 +38,10 @@ Plusieurs outils en ligne sont disponibles pour nous réaliser des audits et obt
 ****
 
 Tout d'abord nous allons nous intéressé au temps d'affichage, composante critique de l'expérience utilisateur et très bon indicateur de problèmes sous-jacents dans l'application.
-Premier rapport :
+
+<br>
+
+Premier rapport (Dareboost):
 
 <br>
 
@@ -46,7 +49,7 @@ Premier rapport :
 
 <br>
 
-Second rapport :
+Second rapport (LightHouse):
 
 <br>
 
@@ -54,7 +57,7 @@ Second rapport :
 
 <br>
 
-On peut voir que le background est très long à charger (cf. image suivante)
+- Après observation de ces deux exemples nous constatons des différences, par exemple, Début d'affichage de Dareboost se situe à 0.87sec alors que celui de LightHouse se situe à 1.6sec. Il est normal d'avoir des différences, même en utilisant le même. Malgré ces différences, les deux sont d'accord sur un point : la find e cahrgement est trop longue, 3.40 secs pour Dareboost et 5.4secs pour LightHouse. Une fois encore nous constatons des différences, mais même le meilleurs cas reste bien trop long pour une application relativement simple.
 
 <br>
 
