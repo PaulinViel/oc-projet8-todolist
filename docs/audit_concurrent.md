@@ -42,7 +42,7 @@ afin que le site s'affiche complètement
 
 <br>
 
-![alt text](../img/concurrentspeed.png)  
+![alt text](../img/concurrentspeed.PNG)  
 
 <br>
 
