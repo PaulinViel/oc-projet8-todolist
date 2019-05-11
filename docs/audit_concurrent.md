@@ -37,7 +37,7 @@ Plusieurs outils en ligne sont disponibles pour nous réaliser des audits et obt
 **Temps d'affichage**
 ****
 
-Tout d'abord nous allons nous intéressé au temps d'affichage, composante critique de l'expérience utilisateur et très bon indicateur de problèmes sous-jacents dans l'application.
+Tout d'abord nous allons nous intéresser au temps d'affichage, composante critique de l'expérience utilisateur et très bon indicateur de problèmes sous-jacents dans l'application.
 
 <br>
 
@@ -56,12 +56,11 @@ Second rapport (LightHouse):
 ![alt text](../img/concurrentSpeed2.PNG)  
 
 <br>
-
-- Après observation de ces deux exemples nous constatons des différences, par exemple, Début d'affichage de Dareboost se situe à 0.87sec alors que celui de LightHouse se situe à 1.6sec. Il est normal d'avoir des différences, même en utilisant le même. Malgré ces différences, les deux sont d'accord sur un point : la find e cahrgement est trop longue, 3.40 secs pour Dareboost et 5.4secs pour LightHouse. Une fois encore nous constatons des différences, mais même le meilleurs cas reste bien trop long pour une application relativement simple.
+- Après observation de ces deux exemples nous constatons des différences, en particulier le début d'affichage, Dareboost se situe à 0.87sec alors que celui de LightHouse se situe à 1.6sec. Il est normal d'avoir des différences, y comprit en utilisant le même outil. Malgré ces différences, les deux sont d'accord sur un point : la fin de chargement est trop longue, 3.40 secs pour Dareboost et 5.4secs pour LightHouse. Une fois encore nous constatons des différences, mais même le meilleurs cas reste bien trop long pour une application relativement simple.
 
 <br>
 
-![alt text](../images/imagelongue.png)
+![alt text](../img/concurrentSpeed3.PNG)
 
 <br>
 
