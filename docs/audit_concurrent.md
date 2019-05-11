@@ -32,21 +32,21 @@ Nous pouvons donc facilement constater d'ou viennent une partie des soucis de ch
 
 ## Performance du site
 
+Plusieurs outils en ligne sont disponibles pour nous réaliser des audits et obtenir le condensé des informations nécessaire, ici nous avons utilisé Dareboost, en plus de l'inspecteur du navigateur Chrome et de Lighthouse.
+
 **Temps d'affichage**
 ****
 
-Le temps d'affichage d'un site est un bon indicateur de la performance du site. 
-Sur ce site, il pourrait être amélioré:  
-A 1,28 secondes, le site commence à s'afficher mais il faut attendre 2.46 secondes 
-afin que le site s'affiche complètement
+Tout d'abord nous allons nous intéressé au temps d'affichage, composante critique de l'expérience utilisateur et très bon indicateur de problèmes sous-jacents dans l'application.
+Premier rapport :
 
 <br>
 
 ![alt text](../img/concurrentspeed.PNG)  
 
 <br>
-
-![alt text](../images/2,46.png)  
+Second rapport :
+![alt text](../img/concurrentSpeed2.PNG)  
 
 <br>
 
