@@ -2,7 +2,7 @@
 
 # Etape 1 : Corrigez les bugs
 
-Première erreur : faute de frappe dans le fichier [controller.js](js/controller.js) :  
+- Première erreur : faute de frappe dans le fichier [controller.js](js/controller.js) :  
 
 `	Controller.prototype.adddItem = function (title) 	`
 
@@ -10,7 +10,7 @@ Après correction :
 
 `	Controller.prototype.addItem = function (title) 	`
 
-Deuxieme erreur : conflit potentiel entre deux IDs (il est possible d'avoir des doublons) dans le fichier [store.js](js/store.js) :
+- Deuxieme erreur : conflit potentiel entre deux IDs (il est possible d'avoir des doublons) dans le fichier [store.js](js/store.js) :
 
     Store.prototype.save = function (updateData, callback, id) {
 		var data = JSON.parse(localStorage[this._dbName]);
