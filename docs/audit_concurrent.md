@@ -71,6 +71,9 @@ Dans la répartition du poids du ralentissement, le premier coupable est le scri
 
 Il serait aussi très utile d'utiliser un système de mise en cache des différentes images permettra de gagner encore plus de temps. 
 
+<br>
+
+![alt text](../img/concurrentSpeed4.PNG)
 
 <br>
 
@@ -78,7 +81,7 @@ On peut voir que Jquery est chargé à chaque fois aussi (cf. image suivante)
 
 <br>
 
-![alt text](../images/jquery.png)
+
 
 ![alt text](../images/jquery_coverage.png)
 
