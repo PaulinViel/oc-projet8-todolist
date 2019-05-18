@@ -208,7 +208,19 @@ Après cette étude du site de notre concurrent, nous pouvons mettre en avant pl
 
 **A faire**
 ***
+<br>
+- Mettre à jours régulièrement les librairies/packages
+- Optimiser autant que possible le JS
+- Utiliser un système de caching
+- Améliorer l'accessibilité d'une manière générale (contraste, taille de police, tags)
+- Améliorer l'utilisation mobile
+- Mettre en place la PWA
 
 
 **A ne pas faire**
 ***
+<br>
+- Garder des failles de sécurité (HTTPS, corriger les vulnérabilités)
+- Avoir trop de calls externes les calls externes (fonts, publicités, librairies, réseaux sociaux) non essentiels
+- Ne pas utiliser d'images non optimisées
+- Faire appel à un trop grand nombre de ressources critiques chargées à chaque changement de page
