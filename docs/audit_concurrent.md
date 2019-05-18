@@ -97,7 +97,7 @@ Résumé des points à modifier pour améliorer la performance du site :
 
 **Resumé**
 ***
-![alt text](../images/performance.png)
+![alt text](../img/auditresume.png)
 <br>
 
 On peut voir que d'après l'audit de la console Chrome, le site nécessite une amélioration au niveau de l'accesibilité mais aussi
