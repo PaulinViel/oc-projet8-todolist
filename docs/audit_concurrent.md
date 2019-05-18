@@ -3,8 +3,6 @@
 [1. Technologies externes](#technologies-externes)  
 [2. Performance du site](#performance-du-site)  
 [3. Audit du site](#audit-du-site)  
-[4. Organisation du site](#organisation-du-site)  
-
 
 
 ## Technologies externes
@@ -45,7 +43,7 @@ Premier rapport (Dareboost):
 
 <br>
 
-![alt text](../img/concurrentspeed.PNG)  
+![alt text](../img/concurrentspeed.PNG "Test vitesse concurrent 1")  
 
 <br>
 
@@ -53,7 +51,7 @@ Second rapport (LightHouse):
 
 <br>
 
-![alt text](../img/concurrentSpeed2.PNG)  
+![alt text](../img/concurrentSpeed2.PNG "Test vitesse concurrent 2")  
 
 <br>
 
@@ -61,7 +59,7 @@ Second rapport (LightHouse):
 
 <br>
 
-![alt text](../img/concurrentSpeed3.PNG)
+![alt text](../img/concurrentSpeed3.PNG "Test vitesse concurrent 3")
 
 <br>
 
@@ -73,7 +71,7 @@ Il serait aussi très utile d'utiliser un système de mise en cache des différe
 
 <br>
 
-![alt text](../img/concurrentSpeed4.PNG)
+![alt text](../img/concurrentSpeed4.PNG "Test vitesse concurrent 4")
 
 <br>
 
