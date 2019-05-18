@@ -1,8 +1,9 @@
 # **Audit de performance du site todolistme.net**
 
 [1. Technologies externes](#technologies-externes)  
-[2. Performance du site](#performance-du-site)  
+[2. Apperçu des performances](#apperçu-des-performances)  
 [3. Audit du site](#audit-du-site)  
+[4. Résumé](#resume)  
 
 
 ## Technologies externes
@@ -28,7 +29,7 @@ Nous pouvons donc facilement constater d'ou viennent une partie des soucis de ch
 ![alt text](../img/requestmap.png "Request Map de totolistme")  
 <br> 
 
-## Performance du site
+## Apperçu des performances
 
 Plusieurs outils en ligne sont disponibles pour nous réaliser des audits et obtenir le condensé des informations nécessaire, ici nous avons utilisé Dareboost, en plus de l'inspecteur du navigateur Chrome et de Lighthouse.
 
@@ -196,3 +197,18 @@ Cela étant, une progresive pourrait apporter des avantages non négligeable dan
 
 <br>
 <br>
+
+
+## Technologies externes
+
+****
+
+Après cette étude du site de notre concurrent, nous pouvons mettre en avant plusieurs points sur les choses à faire et à ne pas faire en cas de scaling de notre application.
+<br>
+
+**A faire**
+***
+
+
+**A ne pas faire**
+***
