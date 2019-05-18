@@ -104,7 +104,6 @@ Audit Lighthouse (extension Chrome) :
 <br>
 
 Tout d'abord, attaquons-nous aux performances : 
-
 <br>
 ![alt text](../img/concurrentperf.png)
 <br>
