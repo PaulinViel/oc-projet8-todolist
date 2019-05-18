@@ -203,23 +203,29 @@ Cela étant, une progresive pourrait apporter des avantages non négligeable dan
 
 ****
 
-Après cette étude du site de notre concurrent, nous pouvons mettre en avant plusieurs points sur les choses à faire et à ne pas faire en cas de scaling de notre application.
+Après cette étude du site de notre concurrent, nous pouvons mettre en avant plusieurs points de comparaison sur les choses à faire et à ne pas faire en cas de scaling de notre application.
+<br>
 <br>
 
 **A faire**
 ***
+
 <br>
+
 - Mettre à jours régulièrement les librairies/packages
 - Optimiser autant que possible le JS
 - Utiliser un système de caching
 - Améliorer l'accessibilité d'une manière générale (contraste, taille de police, tags)
-- Améliorer l'utilisation mobile
+- Améliorer l'utilisation mobile et le côté responsive
 - Mettre en place la PWA
-
+<br>
+<br>
 
 **A ne pas faire**
 ***
+
 <br>
+
 - Garder des failles de sécurité (HTTPS, corriger les vulnérabilités)
 - Avoir trop de calls externes les calls externes (fonts, publicités, librairies, réseaux sociaux) non essentiels
 - Ne pas utiliser d'images non optimisées
