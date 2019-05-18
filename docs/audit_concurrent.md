@@ -43,7 +43,7 @@ Premier rapport (Dareboost):
 
 <br>
 
-![alt text](../img/concurrentspeed.PNG "Test vitesse concurrent 1")  
+![alt text](../img/concurrentspeed.PNG "Test vitesse concurrent Dareboost")  
 
 <br>
 
@@ -51,7 +51,7 @@ Second rapport (LightHouse):
 
 <br>
 
-![alt text](../img/concurrentSpeed2.PNG "Test vitesse concurrent 2")  
+![alt text](../img/concurrentSpeed2.PNG "Test vitesse concurrent LightHouse")  
 
 <br>
 
@@ -59,7 +59,7 @@ Second rapport (LightHouse):
 
 <br>
 
-![alt text](../img/concurrentSpeed3.PNG "Test vitesse concurrent 3")
+![alt text](../img/concurrentSpeed3.PNG "Test vitesse concurrent requetes")
 
 <br>
 
@@ -71,7 +71,7 @@ Il serait aussi très utile d'utiliser un système de mise en cache des différe
 
 <br>
 
-![alt text](../img/concurrentSpeed4.PNG "Test vitesse concurrent 4")
+![alt text](../img/concurrentSpeed4.PNG "Test vitesse concurrent requetes détails")
 
 <br>
 
@@ -99,7 +99,7 @@ Résumé des points à modifier pour améliorer la performance du site :
 Audit Lighthouse (extension Chrome) : 
 <br>
 
-![alt text](../img/auditresume.png)
+![alt text](../img/auditresume.png "audit resume")
 
 <br>
 Visiblement, des améliorations sont possibles ! 
@@ -111,7 +111,7 @@ Visiblement, des améliorations sont possibles !
 
 <br>
 
-![alt text](../img/concurrentperf.png)
+![alt text](../img/concurrentperf.png "audit performances problemes")
 
 <br>
 
@@ -132,7 +132,7 @@ Tout d'abord les performances générales peuvent être améliorées, cela est d
 
 <br>
 
-![alt text](../img/concurrentAccess.png)
+![alt text](../img/concurrentAccess.png "audit accessibilite")
 
 <br>
 
@@ -149,7 +149,7 @@ Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail no
 
 <br>
 
-![alt text](../img/goodPraticices.png)
+![alt text](../img/goodPraticices.png "audit bonnes pratiques")
 
 <br>
 
@@ -173,7 +173,7 @@ Les améliorations qui sont proposés par le site sont entre autre:
 
 <br>
 
-![alt text](../img/concurrentSeo.png)
+![alt text](../img/concurrentSeo.png "audit seo")
 
 <br>
 
