@@ -144,13 +144,23 @@ Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail no
 - Il est aussi préférable d'attribuer un lang attribut au tag html, afin de référencer le langage principal utilisé.
 - Nous constatons aussi que plusieurs images n'ont pas de alt attribut. Cet attribut permet par exemple d'aider à l'indexation dans les SEO (Search Engine Optimization), mais aussi de donner une description de l'image dans le cas ou celle-ci ne charge pas, ou encore pour les screen reader des non voyants. Même chose pour les formulaire et leur labels associés, ces labels ont le même intéret que les alt tags pour les images.
 <br>
-
 <br>
 
-**Performance**
+**Bonnes pratiques**
 ***
-![alt text](../images/performance2.png)  
+
 <br>
+
+![alt text](../img/goodPraticices.png)
+
+<br>
+
+Plusieurs problèmes sont soulignés, certains très importants.
+- Tout d'abord, le site n'utilise pas HTTPS et n'est donc pas sécurisé. La vie privée des utilisateurs n'est pas protégée, le site est particulièrement susceptible aux intrusions diverses, et HTTPS est de nos jours obligatoire pour une majorité des technologies récentes.
+C'est une réelle faille de sécurité qui doit être corrigée.
+- HTTP/2 est une version supérieur à HTTP/1.1, cependant, il faut utiliser HTTPS afin de pouvoir l'utilisée. L'utilisation d'HTTP/2 permet généralement un chargement des pages plu rapide.
+- La version du Jquery utilisée est ancienne et contient des failles de sécurité connues. Le site est donc une fois de plus particulièrement vulnérable.
+- Plusieurs erreurs apparaissent dans la console, montrant que certaines requètes ont échouées, il serait préférable de corriger ces problèmes, mais la priorité n'est pas là.
 
 La majorité des tests sont passés. En effet, on peut voir qu'il y a 75% des tests effectués qui sont validés.  
 Les améliorations qui sont proposés par le site sont entre autre:
@@ -170,22 +180,6 @@ Ceci pourra être une bonne chose de développer une Progressive Web app afin de
 <br>
 
 
-**Accessibilité**
-***
-![alt text](../images/accessibility.png)  
-<br>
-
-L'accessibilité de notre concurrent n'est pas exceptionnelle. En effet, on peut voir que seulement 47% des 
-tests passent. Il s'agit d'un des points importants à faire afin de se démarquer d'eux. 
-Les points majeurs à améliorer sont:                
- - Ajouter un attribut langue dans la balise HTML pour que le lecteur d'écran puisse lire dans la bonne langue,
- - Ajouter des attributs alt (=texte alternatif) sur les différentes images pour permettre d'améliorer 
-   le référencement du site mais aussi de retranscrire avec le lecteur d'acran le texte,
-- Améliorer le contrast entre le background et les textes afin de permettre au plus grand nombre de lire 
-  sans probleme,  
- Tous ses élèments s'ils sont améliorés vont permettre à notre application d'être plus accesible 
-pour les personnes en situation d'handicap.   
-<br>
 
 **Bonne pratique**
 ***
