@@ -103,6 +103,15 @@ Audit Lighthouse (extension Chrome) :
 ![alt text](../img/auditresume.png)
 <br>
 
+Tout d'abord, attaquons-nous aux performances : 
+
+<br>
+![alt text](../img/concurrentperf.png)
+<br>
+
+Le soucis des render-blocking resources est assez problématique et parfois inévitable. En effet, dans notre cas, ces ressources bloquantes concernent le style (fonts google, css, et jquery css). Evidemment, il est possible de faire que le render se produise même si ces ressources ne sont pas chargées, mais dans ce cas il est problable que l'utilisateur expérience une page sans aucun style (aussi appelé FOUC ou 'Flash of Unstyled Content') ce qui est bien sûr à éviter. Il est généralement préférable de ne pas avoir ce FOUC visible, dans ce cas, le mieux est d'optimiser au possible les styles afin que leur chargement se apsse au plus vite (limite la taille et le nombre de fichier, réduire les calls sur des fonts externes ect).
+Le format des images n'est pas otpimisé, des format plus récents de que le png permettent une meilleure compression et un téléchargement plus rapide des images. 
+
 Grâce à cet audit, nous pouvons constater plusieurs problèmes majeurs :
 Tout d'abord les performances générales peuvent être améliorées, cela est du aux soucis vus plus haut (calls externes, script non otpimiser, images trop lourdes ect).
 <br>
