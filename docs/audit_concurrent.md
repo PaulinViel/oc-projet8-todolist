@@ -198,36 +198,3 @@ Cela étant, une progresive pourrait apporter des avantages non négligeable dan
 
 <br>
 <br>
-
-
-
-**Bonne pratique**
-***
-![alt text](../images/best_pratices.png)  
-<br>  
-
-La majorité des tests sont passés sur cette catégorie (73%).  
-Pourtant, pour améliorer les performances et la modernité du site,
-il ne faudrait pas négliger l'update de la librairie Jquery qui contient une faille.  
-En outre, l'utilisation de l'HTTPS permettra au site d'être plus sécurisé, 
-d'être mieux référencé sur Google (et donc bénéficier d'un meilleur référencement) 
-mais aussi d'être plus rapide à charger.  
-<br> 
-**SEO**
-
-![alt text](../images/SEO.png)  
-<br>
-
-Un SEO (Search Engine Optimization) permet en utilisant un ensemble de technique 
-d'améliorer le référencement naturel. Ici, le site possède 78% de tests réussis 
-mais il y a toujours des axes d'améliorations comme:
-- Utiliser une police dont la taille est supérieur à 12px afin que les utilisateurs 
-sur mobiles ne soient pas obligés de zoomer,
-- Ajouter un tag <meta name="viewport"> pour que le site soit optimisés sur les mobiles.
-
-
-
-
-
-
-
