@@ -168,15 +168,35 @@ Les améliorations qui sont proposés par le site sont entre autre:
 * Enlever le CSS inutile,
 * Utiliser des images au bon format et au bon poids.  
 <br>
+<br>
+
+**SEO (Search Engine Optimization)**
+***
+
+<br>
+
+![alt text](../img/concurrentSeo.png)
+
+<br>
+
+Une fois encore, plusieurs problèmes sont mis en avant, en particulier pour le côté "mobile" de l'application.
+- Pas de "viewport" metatag défini, par conséquent un utilisateur sur mobile aura une page adaptée pour desktop, ce qui évidemment n'est pas une bonne chose. Ce metatag permet donc d'adapter l'image entre les différentes t'ailles d'écran, sans même parler de responsive, cela permet au moins d'adapter correctement la page aux différents appareils et dimensions utilisés (ipad, ipadPro, les différentes tailles de mobiles mais aussi desktop).
+- Certaines polices sont trop petites, en particulier sur mobile, on considère que pour lire ce qui est en dessous de 12px de font-size l'utilisateur est obligé de zoomer pour lire correctement, son expérience en est donc impactée.
+- Et enfin les boutons et autres champs intéractibles sont aussi trop petits sur mobile.
+<br>
+<br>
 
 **Application Web Progressive**
 ***
-![alt text](../images/pwa.png)  
+
+Notre concurrent n'a clairement pas mis en place une progressive web app, l'audit ne le traitant même pas.
+Cela étant, une progresive pourrait apporter des avantages non négligeable dans l'optique de scale notre application : 
+- Une PWA est compatible sur tout les mobiles.
+- Coute beaucoup moins cher à développeur qu'une vraie application.
+- Fonctionne en mode hors ligne, ce qui est aprticulièrement utile pour une Todo list.
+- Charge même plus vite sur mobile que pc, les assets étant installés sur le téléphone.
+
 <br>
-
-Seulement 35% des tests sont passés. Notre concurrent n'as donc pas développé une Progressive Web App. 
-Ceci pourra être une bonne chose de développer une Progressive Web app afin de se démarquer des concurrents.
-
 <br>
 
 
