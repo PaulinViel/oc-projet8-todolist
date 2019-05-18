@@ -3,7 +3,7 @@
 [1. Technologies externes](#technologies-externes)  
 [2. Apperçu des performances](#apperçu-des-performances)  
 [3. Audit du site](#audit-du-site)  
-[4. Résumé](#résumé)  
+[4. Résumé](#resume)  
 
 
 ## Technologies externes
@@ -199,7 +199,7 @@ Cela étant, une progresive pourrait apporter des avantages non négligeable dan
 <br>
 
 
-## Technologies externes
+## Résumé
 
 ****
 
