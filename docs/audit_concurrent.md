@@ -134,7 +134,7 @@ Tout d'abord les performances générales peuvent être améliorées, cela est d
 
 <br>
 
-![alt text](../img/concurrentAccess.png)
+![alt text](../img/conccurentAccess.png)
 
 <br>
 
