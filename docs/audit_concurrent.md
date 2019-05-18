@@ -102,7 +102,12 @@ Audit Lighthouse (extension Chrome) :
 <br>
 ![alt text](../img/auditresume.png)
 <br>
+Visiblement, des améliorations sont possibles ! 
 <br>
+
+**Performances**
+***
+
 Tout d'abord, attaquons-nous aux performances : 
 <br>
 <br>
