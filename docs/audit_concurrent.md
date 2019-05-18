@@ -127,6 +127,7 @@ Visiblement, des améliorations sont possibles !
 Grâce à cet audit, nous pouvons constater plusieurs problèmes majeurs :
 Tout d'abord les performances générales peuvent être améliorées, cela est du aux soucis vus plus haut (calls externes, script non otpimiser, images trop lourdes ect).
 <br>
+<br>
 
 **Accessibilité**
 ***
