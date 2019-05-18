@@ -203,7 +203,9 @@ Cela étant, une progresive pourrait apporter des avantages non négligeable dan
 
 ****
 
-Après cette étude du site de notre concurrent, nous pouvons mettre en avant plusieurs points de comparaison sur les choses à faire et à ne pas faire en cas de scaling de notre application.
+Après cette étude du site de notre concurrent, nous pouvons mettre en avant plusieurs points de comparaison sur les choses à faire et à ne pas faire en cas de scaling de notre application. 
+<br>
+Cette liste est bien sûr non exhaustive, les améliorations possible étant "infinie" et dépendant des besoins du client. Elle représente cependant un bon guide des choses à prendre en compte en vue d'un scaling progressif visant à garder à jour un site aussi user friendly et sécurisé que possible.
 <br>
 <br>
 
