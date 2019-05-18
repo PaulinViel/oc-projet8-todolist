@@ -117,7 +117,7 @@ Visiblement, des améliorations sont possibles !
 
 <br>
 
-- Le soucis des render-blocking resources est assez problématique et parfois inévitable. En effet, dans notre cas, ces ressources bloquantes concernent le style (fonts google, css, et jquery css). Evidemment, il est possible de faire que le render se produise même si ces ressources ne sont pas chargées, mais dans ce cas il est problable que l'utilisateur expérience une page sans aucun style (aussi appelé FOUC ou 'Flash of Unstyled Content') ce qui est bien sûr à éviter. Il est généralement préférable de ne pas avoir ce FOUC visible, dans ce cas, le mieux est d'optimiser au possible les styles afin que leur chargement se apsse au plus vite (limite la taille et le nombre de fichier, réduire les calls sur des fonts externes ect).
+- Le soucis des "render-blocking resources" est assez problématique et parfois inévitable. En effet, dans notre cas, ces ressources bloquantes concernent le style (fonts google, css, et jquery css). Evidemment, il est possible de faire que le render se produise même si ces ressources ne sont pas chargées, mais dans ce cas il est problable que l'utilisateur expérience une page sans aucun style (aussi appelé FOUC ou 'Flash of Unstyled Content') ce qui est bien sûr à éviter. Il est généralement préférable de ne pas avoir ce FOUC visible, dans ce cas, le mieux est d'optimiser au possible les styles afin que leur chargement se apsse au plus vite (limite la taille et le nombre de fichier, réduire les calls sur des fonts externes ect).
 - Le format des images n'est pas otpimisé, des format plus récents de que le png permettent une meilleure compression et un téléchargement plus rapide des images. 
 - Des fonts externes sont utilisés, et dans le cas ou l'utilisateur n'a pas ces fonts, il devra les télécharger. Il est classique de définir des fonts de "fall-back" dans le cas ou le téléchargement est trop long ou s'il a été désactivé d'une manière ou d'une autre. Un font de call-back permet donc d'avoir le texte toujours visible, même pendant le téléchargement ou en cas d'échec de ce dernier.
 - Aucun cache n'a été mis en place, en aprticulier pour les images. Cela pourrait éviter de les télécharger à chaque render et donc avoir un rendu plus rapide.
@@ -127,6 +127,16 @@ Visiblement, des améliorations sont possibles !
 Grâce à cet audit, nous pouvons constater plusieurs problèmes majeurs :
 Tout d'abord les performances générales peuvent être améliorées, cela est du aux soucis vus plus haut (calls externes, script non otpimiser, images trop lourdes ect).
 <br>
+
+**Accessibilité**
+***
+
+<br>
+
+![alt text](../img/concurrentAccess.png)
+
+<br>
+
 Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail nous donne d'aurtes informations sur ce problème : 
 - Le ratio de contrast en les couleurs en premier et second plan n'est pas assez élevé, c'est une mauvaise pratique, car un contraste trop faible peut rendre l'utilisation du site compliqué pour certains utilisateur (mal voyants, daltoniens ect), il est donc très important de régler ce problème. 
 - Le résultat du test nous apprend aussi que certains Id ne sont pas uniques (en particulier dans des formulaires, tableaux ect), ce qui peut être problématique pour les bots en ligne par exemple, qui sauteront le 2nd id trouvé, seulement le premier sera "indexé". D'un point de vue code cela est aussi problématique et peut engendrer des dysfonctionnements.
