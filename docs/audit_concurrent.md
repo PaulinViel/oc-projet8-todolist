@@ -111,9 +111,6 @@ Visiblement, des améliorations sont possibles !
 
 <br>
 <br>
-Tout d'abord, attaquons-nous aux performances : 
-
-<br>
 ![alt text](../img/concurrentperf.png)
 <br>
 
