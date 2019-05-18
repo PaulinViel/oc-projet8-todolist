@@ -100,7 +100,9 @@ Résumé des points à modifier pour améliorer la performance du site :
 
 Audit Lighthouse (extension Chrome) : 
 <br>
+
 ![alt text](../img/auditresume.png)
+
 <br>
 Visiblement, des améliorations sont possibles ! 
 <br>
@@ -110,8 +112,9 @@ Visiblement, des améliorations sont possibles !
 ***
 
 <br>
-<br>
+
 ![alt text](../img/concurrentperf.png)
+
 <br>
 
 Le soucis des render-blocking resources est assez problématique et parfois inévitable. En effet, dans notre cas, ces ressources bloquantes concernent le style (fonts google, css, et jquery css). Evidemment, il est possible de faire que le render se produise même si ces ressources ne sont pas chargées, mais dans ce cas il est problable que l'utilisateur expérience une page sans aucun style (aussi appelé FOUC ou 'Flash of Unstyled Content') ce qui est bien sûr à éviter. Il est généralement préférable de ne pas avoir ce FOUC visible, dans ce cas, le mieux est d'optimiser au possible les styles afin que leur chargement se apsse au plus vite (limite la taille et le nombre de fichier, réduire les calls sur des fonts externes ect).
