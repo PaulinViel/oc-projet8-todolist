@@ -3,7 +3,7 @@
 [1. Technologies externes](#technologies-externes)  
 [2. Apperçu des performances](#apperçu-des-performances)  
 [3. Audit du site](#audit-du-site)  
-[4. Résumé](#resume)  
+[4. Résumé](#résumé)  
 
 
 ## Technologies externes
