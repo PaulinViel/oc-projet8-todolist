@@ -97,14 +97,22 @@ Résumé des points à modifier pour améliorer la performance du site :
 
 **Resumé**
 ***
+
+Audit Lighthouse (extension Chrome) : 
+<br>
 ![alt text](../img/auditresume.png)
 <br>
 
-On peut voir que d'après l'audit de la console Chrome, le site nécessite une amélioration au niveau de l'accesibilité mais aussi
-au niveau de l'application web progressive (PWA = Application Web qui permet à un utilisateur d'avoir une
- expérience utilisateur similaire à celle d'une application mobile).  
- Il ne faudra pas négliger les autres parties qui peuvent être essentielles 
- pour être toujours plus performants  
+Grâce à cet audit, nous pouvons constater plusieurs problèmes majeurs :
+Tout d'abord les performances générales peuvent être améliorées, cela est du aux soucis vus plus haut (calls externes, script non otpimiser, images trop lourdes ect).
+<br>
+Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail nous donne d'aurtes informations sur ce problème : 
+- Le ratio de contrast en les couleurs en premier et second plan n'est pas assez élevé, c'est une mauvaise pratique, car un contraste trop faible peut rendre l'utilisation du site compliqué pour certains utilisateur (mal voyants, daltoniens ect), il est donc très important de régler ce problème. 
+- Le résultat du test nous apprend aussi que certains Id ne sont pas uniques (en particulier dans des formulaires, tableaux ect), ce qui peut être problématique pour les bots en ligne par exemple, qui sauteront le 2nd id trouvé, seulement le premier sera "indexé". D'un point de vue code cela est aussi problématique et peut engendrer des dysfonctionnements.
+- Il est aussi préférable d'attribuer un lang attribut au tag html, afin de référencer le langage principal utilisé.
+- Nous constatons aussi que plusieurs images n'ont pas de alt attribut. Cet attribut permet par exemple d'aider à l'indexation dans les SEO (Search Engine Optimization), mais aussi de donner une description de l'image dans le cas ou celle-ci ne charge pas, ou encore pour les screen reader des non voyants. Même chose pour les formulaire et leur labels associés, ces labels ont le même intéret que les alt tags pour les images.
+<br>
+
 <br>
 
 **Performance**
