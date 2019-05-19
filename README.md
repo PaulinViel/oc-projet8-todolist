@@ -181,4 +181,4 @@ L'audit complet est disponible [ici](docs/audit_concurrent.md).
 
 Documentation complète de l'application réalisée.  
 
-Disponible [ici](docs/utilisation_application.md).
+Disponible [ici](docs/guide_utilisation.md).
