@@ -115,13 +115,25 @@ Cliquer sur le lien "Active", situé entre "All" et "Completed", permet de voir 
 
 <br>
 
-Cliquer sur la flèche se situant à gauche du champs d'ajout de titre de todo "What needs to be done?" permet de marqué tout les todos comme marqués, que ceux-ci soient déjà marqués ou non.
+Cliquer sur la flèche se situant à gauche du champs d'ajout de titre de todo "What needs to be done?" permet de marqué tout les todos comme marqués, que ceux-ci soient déjà marqués ou non. 
 
 <br>
 
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
 
-<br<
+<br>
+
+### Supprimer un todo 
+
+<br>
+
+Il y a deux façons de supprimer un/des todos.
+
+Si le/les todos ont été marqués comme "complétés", cliquer sur "Clear completed" les supprimera définitivement.
+Dans le cas ou vous souhaiteriez supprimer un seul todo, complété ou non, vous pouvez cliquer sur la croix marron qui apparaît au survol d'un todo. Cette action supprimera définitivement le todo et il ne sera pas récupérable, il est préférable de ne supprimer des todos avec cette fonction qu'en cas d'erreur.
+
+<br>
+
 ![alt text](../img/todoDelete.png "Surrpime todo")  
 
 <br>
