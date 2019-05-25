@@ -147,8 +147,7 @@ Dans le cas ou vous souhaiteriez supprimer un seul todo, complété ou non, vous
 <br>
 
 L'arborescence suivante présente l'architecture des dossiers principaux du projet.
-```
-OpenClassrooms-Projet-8-To-do-List-Javascript
+``OpenClassrooms-Projet-8-To-do-List-Javascript
 |
 │ index.html
 │
@@ -165,8 +164,7 @@ OpenClassrooms-Projet-8-To-do-List-Javascript
 │
 └─── test
         ControllerSpec.js
-        SpecRunner.html
-        ```
+        SpecRunner.html``
 
 L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur).
 
