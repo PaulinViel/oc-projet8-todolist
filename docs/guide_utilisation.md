@@ -1,7 +1,7 @@
 # **Guide d'utilisation du projet todolis**
 
 [1. Installation](#installation)  
-[2. Guide utilisation](#guide-utilisation)  
+[2. Fonctionnalités](#fonctionnalites)  
 [3. Fonctionnement interne](#fonctionnement-interne)  
 [4. Audits comparatifs](#audit-comparatifs)  
 
@@ -25,7 +25,7 @@ Vous devriez pouvoir dès maintenant ouvrir le fichier `index.html` qui s'ouvrir
 
 ****
 
-## Guide utilisation: 
+## Fonctionnalités: 
 
 ****
 
