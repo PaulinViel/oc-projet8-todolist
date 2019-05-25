@@ -173,20 +173,106 @@ Si vous lancez npm install, le dossier node_modules contiendra le framework de t
 
 Le dossier test contient les fameux tests unitaires qui utilise Jasmine.
 
-L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur) basée sur Todomvc(https://github.com/tastejs/todomvc-common).
+L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur) basée sur Todomvc (https://github.com/tastejs/todomvc-common).
 
-MVC
-L’objectif de ce patron est de séparer la logique du code en trois parties distinctes :
-• Le modèle: Il contient la logique métier mais aussi il contient les données à afficher. (sql)
-• La vue: Elle contient la présentation graphique de l'application. (html)
-• Le contrôleur: Il contient la logique concernant les actions effectuées par l'utilisateur.
-De plus, il assure le lien entre le modèle et la vue. (javascript)
+ <br>
+ 
+#### MVC
+L’objectif de ce pattern est de séparer la logique du code en trois parties distinctes :
+• Model: Il s'occupe de la data, créer, mettre à jour, supprimer ect (dans notre application, c'est le store.js qui enrigistre la data elle-même dans le local storage et le model.js comminque avec le store.js)
+• View: Elle a accès au DOM et est utilisée pour mettre en place les event handlers tel que les "clicks" c'est aussi elle qui met en place l'HTML en communiquant avec notre template.js. 
+• Controller: C'est la glue entre le model et la view, il s'occupe des changements causés par l'utilisateur et envoie l'information au model.js ou à la view.js (voir aux deux) afin de mettre à jour l'application.
 
-App.js
-App.js permet d'instancier l'application grâce à la classe Todo.
+#### App.js
+Initialisation de l'application, création de la base de données, du controller, etc... Il gère aussi la mise à jour de la view au chargement de la page ou à chaque changement d'url.
 
-setView(): En fonction de l'adresse actuelle, cela permet de changer la vue.
+- Todo() : met en place la todo-list "todos-vaillajs" qui sera stockée dans le LocalStorage du navigateur. Elle crée une instance du model qui permettra d'intéragir avec les données. Le template html de base d'un todo est définit ici, et la view par défaut est attachée à ce template. (dans ce projet, la view ne contient pas de HTML, tout est dans le template.js) Le controller fait alors le lien entre le model et la view.
+- setView() : gère le chargement de la view en fonction de l'url actuelle. Cette fonction est appelée au chargement de la page, mais également lorsque le hashtag de l'url change ("All", "Active", "Completed").
 
+#### store.js
+Ce fichier va créer une nouvel objet base de données qui sera stockée dans le LocalStorage du navigateur. Ces méthodes ne sont appelées que dans le fichier model.js (Comme vu précédemment, il n'ya a que le controller qui intéragit avec la data).
+
+- Store : Créé une nouvelle instance de la base de données dans le LocalStorage du navigateur, si elle n'existe pas déjà.
+- Store.prototype.find : Récupère un item dans la base de données.
+- Store.prototype.findAll : Récupère tous les items de la base de données.
+- Store.prototype.save : Ajoute (s'il nexiste pas) ou met à jour (s'il existe) un item dans la base de données.
+- Store.prototype.remove : Supprime un item de la base de données.
+- Store.prototype.drop : Clear complétement la base de données.
+
+#### template.js
+Dans un modèle MVC classique, c'est la view qui s'occupe du code HTML, ici, cette fonctionnalité est déléguée au template et la view appelle les méthodes nécéssaires en fonction des actions utilisateur.
+
+- Template : Génère un template par défaut.
+- Template.prototype.show : Récupère le template par défaut et y injecte les informations du todo.
+- Template.prototype.itemCounter : S'occupe de l'affichage du nombre de todos.
+- Template.prototype.clearCompletedButton : S'occupe de l'affichage du bouton "Clear completed".
+
+#### helpers.js
+Ce fichier permet principalement de ne pas utiliser de librairie lourde comme Jquery. Les actions nécessaire dans notre application étant plutôt simple et légère, il est plus rapide et performant de les créer nous-même. Il permet donc de créer des fonctions réutilisables pour toutes les intéractions nécessaires.
+
+- qs : querySelector, récupère le premier élément html d'après un sélecteur à l'intérieur d'un autre élement (scope).
+- qsa : querySelectorAll, récupères tous les éléments html d'après un sélecteur à l'intérieur d'un autre élement (scope).
+- $on : Ajoute un event listener à l'élément choisi.
+- $delegate : Créer un gestionnaire d'évènements sur un élément existant ou sur un futur élément.
+- $parent : Permet de récupérer le parent d'un élément html.
+
+#### model.js
+Initialise le model et gère la data dans la base de donnée (dans le localStorage). 
+
+- Model : Génère un nouveau model.
+- Model.prototype.create : Créé un nouveau todo.
+- Model.prototype.read : Recupère un ou plusieurs éléments dans la base de données.
+- Model.prototype.update : Met à jour un élément.
+- Model.prototype.remove : Supprime un élément.
+- Model.prototype.removeAll : Supprime tous les éléments.
+- Model.prototype.getCount : Compte le nombre d'éléments existants dans la base de données.
+
+#### view.js
+Gère l'affichage. Les fonctions récupèrent les données reçuent (depuis model.js via controller.js) et les affichent en utilisant le template défini dans template.js, c'est donc lui qui met à jour le visuel de l'application.
+
+View : Définit le template à utiliser et prépare les éléments à cibler via les class CSS.
+View.prototype._removeItem : Supprime un todo.
+View.prototype._clearCompletedButton : Affiche ou cache le bouton "Clear completed".
+View.prototype._setFilter : "Active" visuellement le bouton de filtre sélectionné.
+View.prototype._elementComplete : Raye ou déraye un todo.
+View.prototype._editItem : Gère l'affichage lors de l'édition du titre d'un todo existante.
+View.prototype._editItemDone : Remet un affichage normal au todo qui vient d'être modifié.
+View.prototype.render : Va, selon les paramètres utilisés, lancé une des fonctions suivantes.
+showEntries : affiche les todos.
+removeItem : retire un todo.
+updateElementCount : met à jour le nombre de todos.
+clearCompletedButton : mets à jour le bouton Clear completed.
+contentBlockVisibility : affiche ou masque le "footer" de la todo-list.
+toggleAll : Check tous les éléments.
+setFilter : Gère l'affichage des filtres.
+clearNewTodo : Vide le champ texte principal de la todo-list.
+elementComplete : Gère l'affichage d'un todo complété.
+editItem : Gère l'affichage d'un todo en cours de modification.
+editItemDone : Gère l'affichage d'un todo dont la modification vient d'être terminée.
+View.prototype._itemId : Récupère l'ID d'un todo.
+View.prototype._bindItemEditDone : Gère l'affichage lors de la perte de focus du todo en cours d'édition.
+View.prototype._bindItemEditCancel : Gère l'affichage du todo dont la modification est annulée.
+View.prototype.bind : Attache un gestionnaire d'évènement, avec des évènements javascript associées qui permettront d'effectuer le rendu.
+
+#### controller.js
+C'est dans ce fichier que les données de la base (Model) et l'affichage du site (View) seront mis en relation en fonction des actions de l'utilisateur. Quand une action sera effectuée, le controller fera en sorte que cela affecte à la fois les données et l'affichage.
+
+Controller : Crée le lien entre le model et la view.
+Controller.prototype.setView : Initialise la vue.
+Controller.prototype.showAll : Affiche tous les todos.
+Controller.prototype.showActive : Affiche les todos actifs.
+Controller.prototype.showCompleted : Affiche les todos complétés.
+Controller.prototype.addItem : Ajoute un todo.
+Controller.prototype.editItem : Modifie le titre d'un todo.
+Controller.prototype.editItemSave : Enregistrer un todo dont le titre a été modifié.
+Controller.prototype.editItemCancel : Annule la modification du titre d'un todo.
+Controller.prototype.removeItem : Supprime un todo.
+Controller.prototype.removeCompletedItems : Supprime tous les todos complétés.
+Controller.prototype.toggleComplete : Coche ou décoche un todo.
+Controller.prototype.toggleAll : Coche ou décoche tous les todos.
+Controller.prototype._updateCount : Met à jour le nombre de todos.
+Controller.prototype._filter : Filtre les todos selon leur statut.
+Controller.prototype._updateFilterState : Mets à jour le statut coché selon l'url.
 Controller.js
 Controller.js permet en fonction des actions réalisées par l'utilisateur de modifier la vue et le modèle.
 
