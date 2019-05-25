@@ -60,12 +60,22 @@ Voici la page d'accueil de l'application Todo. C'est une page très simple où l
 
 ### Création d'une liste
 
+<br>
+
+Ajouter un nouveau todo dans la liste est très simple, suffit d'écrire le titre du todo dans le champs texte ('What needs to be done?'), puis, soit appuyer sur la touche "Entrée", soit cliquer en dehors du champs sélectionné afin de valider l'entrée.
+
+<br>
+
+![alt text](../img/todoListItems.png "Liste todo")  
+
+<br>
+
+
 ![alt text](../img/todoActive.png "Active todo")  
 ![alt text](../img/todoComplete.png "Todo complété")  
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
 ![alt text](../img/todoDelete.png "Surrpime todo")  
 ![alt text](../img/todoEdit.png "Edit todo")  
-![alt text](../img/todoListItems.png "Liste todo")  
 ![alt text](../img/totoCmpleted.png "Todo complété")  
 
 <br>
