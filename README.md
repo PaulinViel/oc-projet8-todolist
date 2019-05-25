@@ -1,5 +1,7 @@
 # Projet 8 Openclassrooms - Todo List // Reprenez un projet existant
 
+[Lien vers le guide d'utilisation](docs/guide_utilisation.md)
+
 # Etape 1 : Corrigez les bugs
 
 - Première erreur : faute de frappe dans le fichier [controller.js](js/controller.js) :  
