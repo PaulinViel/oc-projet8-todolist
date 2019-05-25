@@ -3,7 +3,7 @@
 [1. Installation](#installation)  
 [2. Guide utilisation](#guide-utilisation)  
 [3. Fonctionnement interne](#fonctionnement-interne)  
-[4. Audit](#audit)  
+[4. Audits comparatifs](#audit-comparatifs)  
 
 
 <br>
@@ -42,6 +42,6 @@ Une fois le dossier sur votre ordinateur, ouvrez le avec votre éditeur de texte
 
 ****
 
-## Audit: 
+## Audits comparatifs: 
 
 ****
