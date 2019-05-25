@@ -10,9 +10,12 @@ L'application Todolist permet de créer et maintenir une liste de "todos", les m
 
 Les tests sont réalisé à l'aide du standalone [Jasmine](https://jasmine.github.io/). Tout les tests peuvent être trouvés dans `/test/ControlloerSpec.js`. Pour utiliser les tests, vous devrez ouvrir `/test/SpecRunner.html` dans votre navigateur.
 
+<br>
 
 ## Installation:
+
 <br>
+
 Téléchargez ou copiez ce projet sur votre ordinateur.
 
 Cliquez sur le bouton "Clone or download" en haut à droite du projet. Puis cliquez sur l'icone "copy to clipboard". Enfin, ouvrez votre terminal et utilisez la commande git : 
@@ -25,16 +28,21 @@ ici vous copiez le contenu du projet Github "oc-projet8-todolist" sur votre mach
 
 Vous devriez pouvoir dès maintenant ouvrir le fichier `index.html` qui s'ouvrira dans votre navigateur et vous permettra d'utiliser l'application. Si jamais un problème se présente, il sera peut être nécessaire lancer `npm install` pour se mettre à jour. 
 
+<br>
+
 ****
 
 ## Fonctionnalités: 
-<br>
-Cette application permet de gérer une liste de tâches (todo-list) sans devoir enregistrer un compte, la seule limitation étant de devoir utiliser le même navigateur.
 
-En résumé, on peut créer des todos, les éditer, les supprimer, les terminer, les réactiver et les filtrer par statut.
+<br>
+
+Cette application permet de gérer une liste de tâches (todo-list) sans devoir enregistrer de compte. Il est cenpendant nécessaire d'utiliser le même navigateur pour récupérer les données précédemment utilisées.
+
+Il est possible de créer des todos, les éditer, les supprimer, les terminer, les réactiver et les filtrer par statut.
 
 Nous allons voir dans le détail toutes les actions possible sur notre application.
 
+<br>
 ****
 
 ## Fonctionnement interne: 
