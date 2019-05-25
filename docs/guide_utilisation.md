@@ -44,8 +44,6 @@ Il est possible de créer des todos, les éditer, les supprimer, les terminer, l
 
 Nous allons voir dans le détail toutes les actions possible sur notre application :
 
-<br>
-
 ### Page d'accueil
 
 <br>
