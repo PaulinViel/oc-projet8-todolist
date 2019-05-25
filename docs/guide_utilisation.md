@@ -19,7 +19,8 @@ Vous pouvez aussi directement télécharger le fichier ZIP depuis le bouton "Dow
 
 ici vous copiez le contenu du projet Github "oc-projet8-todolist" sur votre machine dans un dossier appelé comme le projet (oc-projet8-todolist).
 
-Une fois le dossier sur votre ordinateur, ouvrez le avec votre éditeur de texte et utilisez la commande `npm install` pour être sûr d'être à jour.
+Vous devriez pouvoir dès maintenant ouvrir le fichier `index.html` qui s'ouvrira dans votre navigateur et vous permettra d'utiliser l'application. Si jamais un problème se présente, il sera peut être nécessaire lancer `npm install` pour se mettre à jour. 
+
 
 ## Guide utilisation: 
 
