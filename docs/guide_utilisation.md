@@ -86,7 +86,7 @@ Pour modifier un todo, double-cliquez sur son titre, vous passerez en mode "édi
 
 <br>
 
-Pour terminer un todo (le marquer complété), il suffit de cliquer sur l'icône à gauche du titre de celui-ci, représenté par un cercle gris. Si vous avez cliqué au bon endroit, la bordure de cercle deviendra plus foncée, une flèche verte apparaîtra au centre de ce dernier, et le titre du todo complété sera barré et rendu plus clair
+Pour terminer un todo (le marquer complété), il suffit de cliquer sur l'icône à gauche du titre de celui-ci, représenté par un cercle gris. Si vous avez cliqué au bon endroit, la bordure du cercle deviendra plus foncée, une flèche verte apparaîtra au centre de ce dernier, et le titre du todo complété sera barré et rendu plus clair. Vous pouvez annulé la complétion d'un todo en cliquant une fois de plus sur le cercle. 
 
 <br>
 
@@ -94,10 +94,18 @@ Pour terminer un todo (le marquer complété), il suffit de cliquer sur l'icône
 
 <br>
 
+Cliquer sur le lien "Completed" se situant en bas de la fenêtre, entre "Active" et "Clear completed" (quand celui-ci est visible) permet d'aller sur une page montrant tout les todos marqués comme complétés.
+Lorsqu'un ou plusieurs todo sont complétés, un lien "Clear completed" apparait en bas à droite de la fenêtre. Cliquer sur ce lien supprimera tout les todos marqués comme "complétés" de toutes les pages ("All", "Completed") et ce de manière manière définitive.
+
+<br>
+
+![alt text](../img/totoCmpleted.png "Todo complété")  
+
+<br>
+
 ![alt text](../img/todoActive.png "Active todo")  
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
 ![alt text](../img/todoDelete.png "Surrpime todo")  
-![alt text](../img/totoCmpleted.png "Todo complété")  
 
 <br>
 ****
