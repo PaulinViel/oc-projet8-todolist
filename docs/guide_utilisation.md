@@ -137,7 +137,6 @@ Dans le cas ou vous souhaiteriez supprimer un seul todo, complété ou non, vous
 ![alt text](../img/todoDelete.png "Surrpime todo")  
 
 <br>
-****
 
 ## Fonctionnement interne: 
 
