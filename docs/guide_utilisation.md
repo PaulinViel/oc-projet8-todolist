@@ -6,7 +6,7 @@
 [4. Audits comparatifs](#audit-comparatifs)  
 
 
-L'application Todolist permet de créer et maintenir une liste de "todos", les marquer en tant que complet, et les filtrer. L'application est réalisée en Vanilla Javascript et n'a pas de dépendency, a part todomvc-common utilisé comme base( https://github.com/tastejs/todomvc-common )
+L'application Todolist permet de créer et maintenir une liste de "todos", les marquer en tant que complet, et les filtrer. L'application est réalisée en Vanilla Javascript et n'a pas de dépendency, à part todomvc-common utilisé comme base (https://github.com/tastejs/todomvc-common)
 
 
 ## Installation:
