@@ -42,6 +42,15 @@ Il est possible de créer des todos, les éditer, les supprimer, les terminer, l
 
 Nous allons voir dans le détail toutes les actions possible sur notre application.
 
+![alt text](../img/todoAccueil.png "Accueil todo")  
+![alt text](../img/todoActive.png "Active todo")  
+![alt text](../img/todoComplete.png "Todo complété")  
+![alt text](../img/todoCompleteAll.png "Todo all complétés")  
+![alt text](../img/todoDelete.png "Surrpime todo")  
+![alt text](../img/todoEdit.png "Edit todo")  
+![alt text](../img/todoListItems.png "Liste todo")  
+![alt text](../img/totoCmpleted.png "Todo complété")  
+
 <br>
 ****
 
