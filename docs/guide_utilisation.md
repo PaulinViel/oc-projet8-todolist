@@ -140,6 +140,178 @@ Dans le cas ou vous souhaiteriez supprimer un seul todo, complété ou non, vous
 
 ## Fonctionnement interne: 
 
+<br>
+
+### Vue d'ensemble
+
+<br>
+
+L'arborescence suivante présente l'architecture des dossiers principaux du projet.
+
+OpenClassrooms-Projet-8-To-do-List-Javascript
+|
+│ index.html
+│
+├─── js
+│       app.js
+│       controller.js
+│       helpers.js
+│       model.js
+│       store.js
+│       template.js
+│       view.js
+│
+├─── node_modules
+│
+└─── test
+        ControllerSpec.js
+        SpecRunner.html
+
+L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur).
+
+MVC
+L’objectif de ce patron est de séparer la logique du code en trois parties distinctes :
+• Le modèle: Il contient la logique métier mais aussi il contient les données à afficher. (sql)
+• La vue: Elle contient la présentation graphique de l'application. (html)
+• Le contrôleur: Il contient la logique concernant les actions effectuées par l'utilisateur.
+De plus, il assure le lien entre le modèle et la vue. (javascript)
+
+App.js
+App.js permet d'instancier l'application grâce à la classe Todo.
+
+setView(): En fonction de l'adresse actuelle, cela permet de changer la vue.
+
+Controller.js
+Controller.js permet en fonction des actions réalisées par l'utilisateur de modifier la vue et le modèle.
+
+setView(): Permet de charger et initialise la vue.
+
+showAll(): Permet de récupèrer les tâches et les affiche dans la liste. Au départ, elle est décochée.
+
+showActive(): Permet de montrer toutes les tâches actives.
+
+showCompleted(): Permet de montrer toutes les tâches complètes.
+
+addItem(): Permet d'ajouter une tâche (donc utilisé chaque fois). Cela permettra de changer le DOM et de sauvegarder la nouvelle tâche.
+
+editItem(): Permet d'éditer la tâche.
+
+editItemSave(): Permet de confirmer l'édition de la tâche.
+
+editItemCancel(): Permet d'annuler l'édition de la tâche.
+
+removeItem(): Permet de supprimer la tâche grâce à son ID dans le DOM mais aussi le storage.
+
+removeCompletedItems(): Permet de supprimer toutes les tâches finis du DOM et du storage.
+
+toggleComplete(): Permet de modifier le statut d’une tâche dont l’id est passé en paramètre.
+
+toggleAll(): Permet de modifier le statut de toutes les checkboxes (on ou off). Il suffit de les passer dans l'objet voulu.
+
+_updateCount(): Permet de mettre à jour en fonction du nombre de tâches à effectuer les différents endroits de la page.
+
+_filter(): Permet de filtrer la liste des tâches.
+
+_updateFilterState(): Permet de mettre à jour le filtre.
+
+Helper.js
+Helper.js permet d'avoir une aide pour la manipulation du DOM. Cela permet donc de ne pas utiliser des librairies.
+
+window.qs: Query Selector, il permet de récuperer les différents éléments grâce à son sélecteur CSS.
+
+window.qsa: Query selector all, il permet de récupèrer tous les éléments grâce aux selecteurs CSS.
+
+window.$on: Il permet de lier à addEventListener un élément voulu.
+
+window.$delegate: Il permet de lier pour tous les éléments correspondant au sélecteur un gestionnaire d'événement.
+
+window.$parent: Il permet à partir d'un tag de trouver l'élément parent d'un élément.
+
+Model.js
+Model.js permet de créer un nouvel objet appellé Model et de manipuler les informations dans le local storage.
+
+create(): Permet de créer le nouveau modèle.
+
+read(): Permet de trouver et de retourner un modèle dans l'espace de stockage. Si jamais aucune reqûete n'est spécifiée, cela ne retourne rien.
+
+update(): Cela permet de mettre à jour une tâche.
+
+remove(): Cela permet d'enlever une tâche.
+
+removeAll(): Permet d'enlever toutes les tâches.
+
+getCount(): permet d'avoir le nombre de tâche.
+
+Store.js
+Le store.js permet de créer une base de donnée avec la classe Store qui sera stockée dans le local storage.
+
+find(): Permet de trouver les tâches à partir d'une requête comme un objet JS.
+
+findAll(): Permet de trouver toutes les tâches de l'espace de stockage.
+
+save(): Permet de sauvegarder une tâche dans la BDD soit en l'updatant soit en la créant.
+
+remove(): Permet de supprimer une tâche de la BDD grâce à son ID.
+
+drop(): Permet de supprimer la BDD actuelle et crée une nouvelle.
+
+Template.js
+Permet de créer le modèle par défaut avec la classe Template.
+
+show(): Permet de créer les balises
+
+de chaque tâche et de les retourner dans l'application.
+itemCounter(): Permet de connaitre le nombre de tâches restantes grâce à un compteur.
+
+clearCompletedButton(): Permet de mettre à jour avec le texte suivant "Clear completed" si le nombre de tâche complété est supérieur à 0.
+
+View.js
+View.js permet de manipuler le DOM et fait la liaison entre le model et le controller. On va utiliser dans les différentes méthodes les sélecteurs de helper.js
+
+_removeItem: Permet de supprimer une tâche.
+
+_clearCompletedButton: Permet d'afficher le bouton 'Clear completed'.
+
+_setFilter(): Permet de filtrer suivant la page les résultats voulus.
+
+elementComplete(): Permet de définir si une tâche a bien été effectué.
+
+_editItem(): Permet lors de l'édiion d'une tâche de l'afficher.
+
+_editItemDone(): Permet d'afficher la tâche après son édition.
+
+render(): Permet de gérer l'affichage grâce aux fonctions suivantes:
+
+showEntries: Permet d'afficher les tâches.
+
+removeItem: Permet de supprimer une tâche.
+
+updateElementCount: Permet de mettre à jour le nombre de tâches.
+
+clearCompletedButton: Permet de mettre à jour l'affichage du 'Clear completed'.
+
+contentBlockVisibility: Permet de choisir si on veut l'affichage du footer.
+
+toggleAll: Permet de basculer toutes les tâches.
+
+setFilter: Permet d'afficher le filtre demandé.
+
+clearNewTodo: Permet de supprimer les informations dans le champs de saisie.
+
+elementComplete: Permet d'afficher une tâche terminée.
+
+editItem: Permet de choisir une tâche pour l'éditer.
+
+editItemDone: Permet de fermer la tâche en cours d'édition.
+
+_itemId(): Permet de retourner l'ID de la tâche.
+
+_bindItemEditDone(): Permet de gérer l'arrêt de l'édition de la tâche.
+
+_bindItemEditCancel(): Permet de gérer l'annulation de l'édition de la tâche.
+
+bind(): Permet de gérer l'utilisationd de Javascript suivant l'événement retourné.
+
 ****
 
 ## Audits comparatifs: 
