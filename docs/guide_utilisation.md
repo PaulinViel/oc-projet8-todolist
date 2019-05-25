@@ -82,11 +82,11 @@ Pour modifier un todo, double-cliquez sur son titre, vous passerez en mode "édi
 
 <br>
 
-### Compléter un todo
+### Terminer un todo
 
 <br>
 
-Lorsqu'une entrée a été validée, il suffit de cliquer à gauche sur le petit rond afin de valider celle-ci.
+Pour terminer un todo (le marquer complété), il suffit de cliquer sur l'icône à gauche du titre de celui-ci, représenté par un cercle gris. Si vous avez cliqué au bon endroit, la bordure de cercle deviendra plus foncée, une flèche verte apparaîtra au centre de ce dernier, et le titre du todo complété sera barré et rendu plus clair
 
 <br>
 
