@@ -20,6 +20,7 @@ ici vous copiez le contenu du projet Github "oc-projet8-todolist" sur votre mach
 
 Vous devriez pouvoir dès maintenant ouvrir le fichier `index.html` qui s'ouvrira dans votre navigateur et vous permettra d'utiliser l'application. Si jamais un problème se présente, il sera peut être nécessaire lancer `npm install` pour se mettre à jour. 
 
+****
 
 ## Guide utilisation: 
 
