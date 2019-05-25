@@ -40,9 +40,23 @@ Cette application permet de gérer une liste de tâches (todo-list) sans devoir 
 
 Il est possible de créer des todos, les éditer, les supprimer, les terminer, les réactiver et les filtrer par statut.
 
-Nous allons voir dans le détail toutes les actions possible sur notre application.
+<br>
+
+Nous allons voir dans le détail toutes les actions possible sur notre application :
+
+<br>
+### Page d'accueil
+<br>
+Voici la page d'accueil de l'application Todo. C'est une page très simple où l'on peut voir un champ texte (input) servant à ajouter de nouveaux todos.
+
+<br>
 
 ![alt text](../img/todoAccueil.png "Accueil todo")  
+
+<br>
+
+### Création d'une liste
+
 ![alt text](../img/todoActive.png "Active todo")  
 ![alt text](../img/todoComplete.png "Todo complété")  
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
