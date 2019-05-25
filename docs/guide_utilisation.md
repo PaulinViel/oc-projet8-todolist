@@ -44,6 +44,8 @@ Il est possible de créer des todos, les éditer, les supprimer, les terminer, l
 
 Nous allons voir dans le détail toutes les actions possible sur notre application :
 
+<br>
+
 ### Page d'accueil
 
 <br>
@@ -60,7 +62,7 @@ Voici la page d'accueil de l'application Todo. C'est une page très simple où l
 
 <br>
 
-Ajouter un nouveau todo dans la liste est très simple, suffit d'écrire le titre du todo dans le champs texte ('What needs to be done?'), puis, soit appuyer sur la touche "Entrée", soit cliquer en dehors du champs sélectionné afin de valider l'entrée.
+Ajouter un nouveau todo dans la liste est très simple. Il suffit d'écrire le titre du todo dans le champs texte ('What needs to be done?'), puis, soit appuyer sur la touche "Entrée", soit cliquer en dehors du champs sélectionné afin de valider l'entrée.
 
 <br>
 
@@ -68,12 +70,22 @@ Ajouter un nouveau todo dans la liste est très simple, suffit d'écrire le titr
 
 <br>
 
+### Modifier un todo
+
+<br>
+
+Pour modifier un todo, double-cliquez sur son titre, vous passerez en mode "édition", le todo sélectionné aura une bordure grise et votre curseur se trouvera dans le champs de titre, comme vu ci-dessous. A partir de là vous pouvez modifier le titre de votre todo en validant de la même façon que vu précédemment ("Entrée" ou "Click" en dehors du champs). Dans le cas ou vous souhaiteriez  annuler votre modification avant d'avoir validation, appuyer sur "Echap", l'ancien titre sera restauré. 
+
+<br>
+
+![alt text](../img/todoEdit.png "Edit todo")  
+
+<br>
 
 ![alt text](../img/todoActive.png "Active todo")  
 ![alt text](../img/todoComplete.png "Todo complété")  
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
 ![alt text](../img/todoDelete.png "Surrpime todo")  
-![alt text](../img/todoEdit.png "Edit todo")  
 ![alt text](../img/totoCmpleted.png "Todo complété")  
 
 <br>
