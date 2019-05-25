@@ -12,7 +12,7 @@ Les tests sont réalisé à l'aide du standalone [Jasmine](https://jasmine.githu
 
 
 ## Installation:
-
+<br>
 Téléchargez ou copiez ce projet sur votre ordinateur.
 
 Cliquez sur le bouton "Clone or download" en haut à droite du projet. Puis cliquez sur l'icone "copy to clipboard". Enfin, ouvrez votre terminal et utilisez la commande git : 
@@ -28,6 +28,12 @@ Vous devriez pouvoir dès maintenant ouvrir le fichier `index.html` qui s'ouvrir
 ****
 
 ## Fonctionnalités: 
+<br>
+Cette application permet de gérer une liste de tâches (todo-list) sans devoir enregistrer un compte, la seule limitation étant de devoir utiliser le même navigateur.
+
+En résumé, on peut créer des todos, les éditer, les supprimer, les terminer, les réactiver et les filtrer par statut.
+
+Nous allons voir dans le détail toutes les actions possible sur notre application.
 
 ****
 
