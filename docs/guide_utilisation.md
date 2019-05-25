@@ -173,7 +173,7 @@ Si vous lancez npm install, le dossier node_modules contiendra le framework de t
 
 Le dossier test contient les fameux tests unitaires qui utilise Jasmine.
 
-L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur) basée sur Todomvc.
+L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur) basée sur Todomvc(https://github.com/tastejs/todomvc-common).
 
 MVC
 L’objectif de ce patron est de séparer la logique du code en trois parties distinctes :
