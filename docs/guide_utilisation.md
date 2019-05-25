@@ -238,21 +238,22 @@ Gère l'affichage. Les fonctions récupèrent les données reçuent (depuis mode
 - View.prototype._editItem : Gère l'affichage lors de la modification d'un todo.
 - View.prototype._editItemDone : Retourne à l'affichage classic du todo qui vient d'être modifié.
 - View.prototype.render : S'occupe des fonctions suivantes : 
-- showEntries : Affiche les todos.
-- removeItem : Supprime un todo.
-- updateElementCount : Met à jour le nombre de todos.
-- clearCompletedButton : Mets à jour le bouton Clear completed.
-- contentBlockVisibility : Affiche ou masque le "footer" de la todo-list.
-- toggleAll : Marque tous les éléments comme "Completed".
-- setFilter : Gère l'affichage des filtres (url).
-- clearNewTodo : Vide le champ texte principal de la todo-list après création.
-- elementComplete : Gère l'affichage pour l'ajout d'un nouveau todo.
-- editItem : Gère l'affichage d'un todo en cours de modification.
-- editItemDone : Gère l'affichage d'un todo dont la modification vient d'être terminée.
-- View.prototype._itemId : Récupère l'ID d'un todo.
-- View.prototype._bindItemEditDone : Gère l'affichage lors de la perte de focus du todo en cours d'édition.
-- View.prototype._bindItemEditCancel : Gère l'affichage du todo dont la modification est annulée.
-- View.prototype.bind : Attache un gestionnaire d'évènement, avec des évènements javascript associées qui permettront d'effectuer le rendu.
+
+        - showEntries : Affiche les todos.
+        - removeItem : Supprime un todo.
+        - updateElementCount : Met à jour le nombre de todos.
+        - clearCompletedButton : Mets à jour le bouton Clear completed.
+        - contentBlockVisibility : Affiche ou masque le "footer" de la todo-list.
+        - toggleAll : Marque tous les éléments comme "Completed".
+        - setFilter : Gère l'affichage des filtres (url).
+        - clearNewTodo : Vide le champ texte principal de la todo-list après création.
+        - elementComplete : Gère l'affichage pour l'ajout d'un nouveau todo.
+        - editItem : Gère l'affichage d'un todo en cours de modification.
+        - editItemDone : Gère l'affichage d'un todo dont la modification vient d'être terminée.
+        - View.prototype._itemId : Récupère l'ID d'un todo.
+        - View.prototype._bindItemEditDone : Gère l'affichage lors de la perte de focus du todo en cours d'édition.
+        - View.prototype._bindItemEditCancel : Gère l'affichage du todo dont la modification est annulée.
+        - View.prototype.bind : Attache un gestionnaire d'évènement, avec des évènements javascript associées qui permettront d'effectuer le rendu.
 
 #### controller.js
 C'est dans ce fichier que les données de la base (Model) et l'affichage du site (View) seront mis en relation en fonction des actions de l'utilisateur. Quand une action sera effectuée, le controller fera en sorte que cela affecte à la fois les données et l'affichage.
