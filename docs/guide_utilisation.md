@@ -8,7 +8,6 @@
 
 ## Installation:
 
-****
 Téléchargez ou copiez ce projet sur votre ordinateur.
 
 Cliquez sur le bouton "Clone or download" en haut à droite du projet. Puis cliquez sur l'icone "copy to clipboard". Enfin, ouvrez votre terminal et utilisez la commande git : 
