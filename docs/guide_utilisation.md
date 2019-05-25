@@ -6,19 +6,6 @@
 [4. Audits comparatifs](#audit-comparatifs)  
 
 
-<br>
-
-![alt text](../img/auditv1.png "Audit v1")  
-
-<br>
-<br>
-
-![alt text](../img/auditv2.png "Audit v2")  
-
-<br>
-
-test 
-
 ## Installation:
 
 ****
@@ -45,3 +32,14 @@ Une fois le dossier sur votre ordinateur, ouvrez le avec votre éditeur de texte
 ## Audits comparatifs: 
 
 ****
+
+<br>
+
+![alt text](../img/auditv1.png "Audit v1")  
+
+<br>
+<br>
+
+![alt text](../img/auditv2.png "Audit v2")  
+
+<br>
