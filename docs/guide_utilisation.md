@@ -148,7 +148,6 @@ Dans le cas ou vous souhaiteriez supprimer un seul todo, complété ou non, vous
 
 L'arborescence suivante présente l'architecture des dossiers principaux du projet.
 ```
-  OpenClassrooms-Projet-8-To-do-List-Javascript
 |
 │ index.html
 │
@@ -168,7 +167,13 @@ L'arborescence suivante présente l'architecture des dossiers principaux du proj
         SpecRunner.html
 ```
 
-L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur).
+Le dossier js contient le cœur même de l'application. Ce sont ces fichiers qui permettent de gérer entièrement la todo-list dans le fichier index.html .
+
+Si vous lancez npm install, le dossier node_modules contiendra le framework de test unitaire Jasmine ainsi que la base de Todomvc-common.
+
+Le dossier test contient les fameux tests unitaires qui utilise Jasmine.
+
+L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur) basée sur Todomvc.
 
 MVC
 L’objectif de ce patron est de séparer la logique du code en trois parties distinctes :
