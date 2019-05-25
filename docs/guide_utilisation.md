@@ -103,8 +103,25 @@ Lorsqu'un ou plusieurs todo sont complétés, un lien "Clear completed" apparait
 
 <br>
 
+Cliquer sur le lien "Active", situé entre "All" et "Completed", permet de voir tout vos todos actifs (non marqués comme "complété")
+
+<br>
+
 ![alt text](../img/todoActive.png "Active todo")  
+
+<br>
+
+### Complétion de tout les todos
+
+<br>
+
+Cliquer sur la flèche se situant à gauche du champs d'ajout de titre de todo "What needs to be done?" permet de marqué tout les todos comme marqués, que ceux-ci soient déjà marqués ou non.
+
+<br>
+
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
+
+<br<
 ![alt text](../img/todoDelete.png "Surrpime todo")  
 
 <br>
