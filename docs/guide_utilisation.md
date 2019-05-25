@@ -1,6 +1,6 @@
 # **Guide d'utilisation du projet todolis**
 
-[1. Installation](#installation)
+[1. Installation](#installation)  
 [2. Guide utilisation](#guide-utilisation)  
 [3. Fonctionnement interne](#fonctionnement-interne)  
 [4. Audit](#audit)  
