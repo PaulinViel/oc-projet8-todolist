@@ -82,8 +82,19 @@ Pour modifier un todo, double-cliquez sur son titre, vous passerez en mode "édi
 
 <br>
 
-![alt text](../img/todoActive.png "Active todo")  
+### Compléter un todo
+
+<br>
+
+Lorsqu'une entrée a été validée, il suffit de cliquer à gauche sur le petit rond afin de valider celle-ci.
+
+<br>
+
 ![alt text](../img/todoComplete.png "Todo complété")  
+
+<br>
+
+![alt text](../img/todoActive.png "Active todo")  
 ![alt text](../img/todoCompleteAll.png "Todo all complétés")  
 ![alt text](../img/todoDelete.png "Surrpime todo")  
 ![alt text](../img/totoCmpleted.png "Todo complété")  
