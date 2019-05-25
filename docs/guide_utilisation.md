@@ -45,8 +45,11 @@ Il est possible de créer des todos, les éditer, les supprimer, les terminer, l
 Nous allons voir dans le détail toutes les actions possible sur notre application :
 
 <br>
+
 ### Page d'accueil
+
 <br>
+
 Voici la page d'accueil de l'application Todo. C'est une page très simple où l'on peut voir un champ texte (input) servant à ajouter de nouveaux todos.
 
 <br>
