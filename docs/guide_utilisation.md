@@ -258,24 +258,26 @@ View.prototype.render : S'occupe des fonctions suivantes :
  - View.prototype.bind : Attache un gestionnaire d'évènement, avec des évènements javascript associées qui permettront d'effectuer le rendu.
 
 #### controller.js
-C'est dans ce fichier que les données de la base (Model) et l'affichage du site (View) seront mis en relation en fonction des actions de l'utilisateur. Quand une action sera effectuée, le controller fera en sorte que cela affecte à la fois les données et l'affichage.
+Met en relation model.s et view.js en réaction aux input de l'utilisateur. Lors d'une action, le controller notifie model.js pour mettre à jour la base de données, et view.js pour mettre à jour le visuel.
 
-Controller : Crée le lien entre le model et la view.
-Controller.prototype.setView : Initialise la vue.
-Controller.prototype.showAll : Affiche tous les todos.
-Controller.prototype.showActive : Affiche les todos actifs.
-Controller.prototype.showCompleted : Affiche les todos complétés.
-Controller.prototype.addItem : Ajoute un todo.
-Controller.prototype.editItem : Modifie le titre d'un todo.
-Controller.prototype.editItemSave : Enregistrer un todo dont le titre a été modifié.
-Controller.prototype.editItemCancel : Annule la modification du titre d'un todo.
-Controller.prototype.removeItem : Supprime un todo.
-Controller.prototype.removeCompletedItems : Supprime tous les todos complétés.
-Controller.prototype.toggleComplete : Coche ou décoche un todo.
-Controller.prototype.toggleAll : Coche ou décoche tous les todos.
-Controller.prototype._updateCount : Met à jour le nombre de todos.
-Controller.prototype._filter : Filtre les todos selon leur statut.
-Controller.prototype._updateFilterState : Mets à jour le statut coché selon l'url.
+- Controller : Crée le lien entre le model et la view.
+- Controller.prototype.setView : Initialise la vue.
+- Controller.prototype.showAll : Affiche tous les todos.
+- Controller.prototype.showActive : Affiche les todos actifs.
+- Controller.prototype.showCompleted : Affiche les todos complétés.
+- Controller.prototype.addItem : Ajoute un todo.
+- Controller.prototype.editItem : Modifie un todo.
+- Controller.prototype.editItemSave : Enregistre la modification d'un todo.
+- Controller.prototype.editItemCancel : Annule la modification d'un todo.
+- Controller.prototype.removeItem : Supprime un todo.
+- Controller.prototype.removeCompletedItems : Supprime tous les todos complétés.
+- Controller.prototype.toggleComplete : Coche ou décoche un todo.
+- Controller.prototype.toggleAll : Coche ou décoche tous les todos.
+- Controller.prototype._updateCount : Met à jour le nombre de todos.
+- Controller.prototype._filter : Filtre les todos selon leur statut.
+- Controller.prototype._updateFilterState : Mets à jour le statut coché selon l'url.
+
+
 Controller.js
 Controller.js permet en fonction des actions réalisées par l'utilisateur de modifier la vue et le modèle.
 
