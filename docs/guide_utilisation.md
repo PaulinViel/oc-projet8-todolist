@@ -237,7 +237,8 @@ Gère l'affichage. Les fonctions récupèrent les données reçuent (depuis mode
 - View.prototype._elementComplete : Change le visuel d'un todo en fonction de son statut ("Completed" ou non).
 - View.prototype._editItem : Gère l'affichage lors de la modification d'un todo.
 - View.prototype._editItemDone : Retourne à l'affichage classic du todo qui vient d'être modifié.
-- View.prototype.render : S'occupe des fonctions suivantes : 
+<br>
+View.prototype.render : S'occupe des fonctions suivantes : 
  - showEntries : Affiche les todos.
  - removeItem : Supprime un todo.
  - updateElementCount : Met à jour le nombre de todos.
