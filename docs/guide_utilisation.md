@@ -1,7 +1,7 @@
 # **Guide d'utilisation du projet todolis**
 
 [1. Installation](#installation)  
-[2. Fonctionnalités](#fonctionnalites)  
+[2. Fonctionnalités](#fonctionnalités)  
 [3. Fonctionnement interne](#fonctionnement-interne)  
 [4. Audits comparatifs](#audit-comparatifs)  
 
