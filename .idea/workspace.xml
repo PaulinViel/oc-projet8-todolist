@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f21d054d-d9c7-4bb4-b17b-91080ee2c954" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f21d054d-d9c7-4bb4-b17b-91080ee2c954" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,6 +47,11 @@
               <item name="oc-projet8-todolist" type="b2602c69:ProjectViewProjectNode" />
               <item name="oc-projet8-todolist" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oc-projet8-todolist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oc-projet8-todolist" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -96,12 +99,12 @@
       <updated>1558709598045</updated>
       <workItem from="1558709599875" duration="462000" />
       <workItem from="1558710609208" duration="114000" />
-      <workItem from="1558788222456" duration="1504000" />
+      <workItem from="1558788222456" duration="1613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2080000" />
+    <option name="totallyTimeSpent" value="2189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
