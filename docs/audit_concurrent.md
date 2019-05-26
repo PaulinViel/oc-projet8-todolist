@@ -18,7 +18,6 @@ L'utilisation de WhatsRun, nous a permis de pouvoir analyser les technologies ut
 
 <br>
 
-***
 
 **Request Map**
 
@@ -28,14 +27,18 @@ Nous pouvons donc facilement constater d'ou viennent une majorité des soucis de
 <br>
 
 ![alt text](../img/requestmap.png "Request Map de totolistme")  
+
 <br> 
+
+****
 
 ## Apperçu des performances
 
 Plusieurs outils en ligne sont disponibles pour nous réaliser des audits et obtenir le condensé des informations nécessaire, ici nous avons utilisé Dareboost, en plus de l'inspecteur du navigateur Chrome et de Lighthouse.
 
 **Temps d'affichage**
-****
+
+<br>
 
 Tout d'abord nous allons nous intéresser au temps d'affichage, composante critique de l'expérience utilisateur et très bon indicateur de problèmes sous-jacents dans l'application.
 
