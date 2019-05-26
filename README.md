@@ -21,7 +21,8 @@ Après correction :
 <br>
 
 - Troisième erreur : conflit potentiel entre deux IDs (il est possible d'avoir des doublons) dans le fichier [store.js](js/store.js) :
-`Store.prototype.save = function (updateData, callback, id) {
+
+		Store.prototype.save = function (updateData, callback, id) {
 		var data = JSON.parse(localStorage[this._dbName]);
 		var todos = data.todos;
 
@@ -58,10 +59,10 @@ Après correction :
 			localStorage[this._dbName] = JSON.stringify(data);
 			callback.call(this, [updateData]);
 		}
-	};
-`
+		};
+
 Après correction :
-`
+
     Store.prototype.save = function (updateData, callback, id) {
         const data = JSON.parse(localStorage[this._dbName]);
         const todos = data.todos;
@@ -94,7 +95,7 @@ Après correction :
         }
     };
 
-`
+
 - Suppression complète de la logique avec les var newId et charset, à la place, nous utilisons Date.now() qui générera un Id unique en fonctionne de la date/heure actuelle (à la milliseconde près).
 
 <br>
