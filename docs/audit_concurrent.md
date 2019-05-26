@@ -173,7 +173,6 @@ C'est une réelle faille de sécurité qui doit être corrigée.
 - HTTP/2 est une version supérieur à HTTP/1.1, cependant, il faut utiliser HTTPS afin de pouvoir l'utilisée. L'utilisation d'HTTP/2 permet généralement un chargement des pages plu rapide.
 - La version du Jquery utilisée est ancienne et contient des failles de sécurité connues, elle n'est pas minifiée vue la taille du call. Le site est donc une fois de plus particulièrement vulnérable.
 - Plusieurs erreurs apparaissent dans la console, montrant que certaines requètes ont échouées, il serait préférable de corriger ces problèmes, mais la priorité n'est pas là.
-- Le site n'est pas du tout responsive. 
 
 La majorité des tests sont passés. En effet, on peut voir qu'il y a 75% des tests effectués qui sont validés.  
 Les améliorations qui sont proposés par le site sont entre autre:
@@ -251,6 +250,6 @@ Cette liste est bien sûr non exhaustive, les améliorations possible étant "in
 <br>
 
 - Garder des failles de sécurité (HTTPS, corriger les vulnérabilités)
-- Avoir trop de calls externes les calls externes (fonts, publicités, librairies, réseaux sociaux) non essentiels
+- Avoir trop de calls externe (fonts, publicités, librairies, réseaux sociaux) non essentiel
 - Ne pas utiliser d'images non optimisées
 - Faire appel à un trop grand nombre de ressources critiques chargées à chaque changement de page
