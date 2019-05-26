@@ -165,9 +165,6 @@ Après correction :
 
 - La première boucle for servant simplement à attribuer à todoId la valeur de todos[i].id, celle-ci n'est pas nécessaire vu que la seconde boucle permet d'obtenir le même résultat en utilisant directement l'argument id reçu.
         
-Plusieurs autres optimisations on été réalisées/considérées en cas de scaling, vous les trouverez dans le document [audit](docs/audit_todos.md).
-
-
 ## Etape 2 : Où sont les tests ?!
 
 Les tests ont été ajoutés directement dans le fichier [ControllerSpec](test/ControllerSpec.js).
