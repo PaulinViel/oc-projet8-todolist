@@ -358,3 +358,4 @@ Ci-dessus vous trouvez l'audit après correction des bugs et améliorations. Tou
 
 Ces 3 problèmes sont liés au manque de metatag, qui empêche l'application d'être correctement responsive. Ce problème a bien sûr été résolu et l'application fonctionne parfaitement sur tout formats d'écran.
 
+<br>
