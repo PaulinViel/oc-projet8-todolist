@@ -5,10 +5,10 @@
 [3. Audit du site](#audit-du-site)  
 [4. Résumé](#résumé)  
 
+****
 
 ## Technologies externes
 
-****
 
 L'utilisation de WhatsRun, nous a permis de pouvoir analyser les technologies utilisées par le site :  
 
