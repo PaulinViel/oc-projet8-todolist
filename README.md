@@ -21,7 +21,7 @@ Après correction :
 <br>
 
 - Troisième erreur : conflit potentiel entre deux IDs (il est possible d'avoir des doublons) dans le fichier [store.js](js/store.js) :
-
+`
     Store.prototype.save = function (updateData, callback, id) {
 		var data = JSON.parse(localStorage[this._dbName]);
 		var todos = data.todos;
@@ -60,9 +60,9 @@ Après correction :
 			callback.call(this, [updateData]);
 		}
 	};
-	
+`
 Après correction :
-
+`
     Store.prototype.save = function (updateData, callback, id) {
         const data = JSON.parse(localStorage[this._dbName]);
         const todos = data.todos;
@@ -94,7 +94,8 @@ Après correction :
             callback.call(this, [updateData]);
         }
     };
-    
+
+`
 - Suppression complète de la logique avec les var newId et charset, à la place, nous utilisons Date.now() qui générera un Id unique en fonctionne de la date/heure actuelle (à la milliseconde près).
 
 <br>
@@ -102,9 +103,13 @@ Après correction :
 - En cas de scaling de l'application (utilisations par plusieurs dizaines de personnes sur un même compte par exemple), pour assurer -autant que possible- un Id unique dans le cas ou deux personnes générerait un nouveau todo à la même milliseconde, il est recommandé d'utiliser l'algorithme de Fisher–Yates, qui demande bien plus de ressources mais est l'une des solutions les plus adaptées pour générer un iD unique.
 
 <br>
+
 <br>
+
 D'autres améliorations ont été réalisées :
+
 <br>
+
 Dans le fichier [controller.js](js/controller.js), deux boucles while sont inutiles :
        
         while (title[0] === " ") {
@@ -117,7 +122,7 @@ et
             title = title.slice(0, -1);
         }
         
-- Le check sur title[0] et title[title.length-1] se faisant sur une string vide, il n'y a donc aucune raison de slice
+- Le check sur title[0] et title[title.length-1] se faisant sur une string vide, il n'y a donc aucune raison de slice()
 
 Dans le fichier [store.js](js/store.js), une boucle for est inutile :
 
