@@ -18,8 +18,9 @@ L'utilisation de WhatsRun, nous a permis de pouvoir analyser les technologies ut
 
 <br>
 
-**Request Map**
 ***
+
+**Request Map**
 
 La request map de todolist.net nous permet d'observer l'ensemble des interactions avec les parties tiers.
 Nous pouvons donc facilement constater d'ou viennent une majorité des soucis de chargement et de ralentissement du site. 
