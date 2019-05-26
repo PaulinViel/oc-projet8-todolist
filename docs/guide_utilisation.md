@@ -277,6 +277,29 @@ Met en relation model.s et view.js en réaction aux input de l'utilisateur. Lors
 - Controller.prototype._filter : Filtre les todos selon leur statut.
 - Controller.prototype._updateFilterState : Mets à jour le statut coché selon l'url.
 
+<br>
+
+### Tests unitaires
+
+<br>
+
+Jasmine a été utilisé pour réaliser les tests de l'application. Pour y accéder, ouvrez le fichier SpecRunner.html situé dans le dossier test.
+
+Les tests se trouvent dans le fichier ControllerSpec.js et vérifient des cas d'utilisation du site, exemple :
+
+- Chargement de l'affichage "All" quand on arrive sur le site.
+- Chargement des todos filtrés, en fonction du hashtag présent dans l'url du site.
+- Affichage du footer de la todo-list en fonction de la présence ou non de todos.
+- Affichage du bouton "Clear completed" ou non.
+- Activation ou désactivation des todos.
+- Ajout ou la suppression de todos,
+- Affichage du champ texte.
+- Edition du titre d'un todo.
+etc...
+
+<br>
+
+
 ****
 
 ## Audits comparatifs: 
