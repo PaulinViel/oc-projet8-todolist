@@ -10,7 +10,7 @@
 
 ****
 
-L'utilisation de WhatsRun, nous a permit de pouvoir analyser les technologies utilisés par le site :  
+L'utilisation de WhatsRun, nous a permis de pouvoir analyser les technologies utilisées par le site :  
 
 <br>
 
@@ -21,8 +21,8 @@ L'utilisation de WhatsRun, nous a permit de pouvoir analyser les technologies ut
 **Request Map**
 ***
 
-La request map de todolist.net nous permet d'observer l'ensemble des interactions avec parties tiers.
-Nous pouvons donc facilement constater d'ou viennent une partie des soucis de chargement et de ralentissement du site. 
+La request map de todolist.net nous permet d'observer l'ensemble des interactions avec les parties tiers.
+Nous pouvons donc facilement constater d'ou viennent une majorité des soucis de chargement et de ralentissement du site. 
 
 <br>
 
@@ -121,7 +121,7 @@ Visiblement, des améliorations sont possibles !
 - Des fonts externes sont utilisés, et dans le cas ou l'utilisateur n'a pas ces fonts, il devra les télécharger. Il est classique de définir des fonts de "fall-back" dans le cas ou le téléchargement est trop long ou s'il a été désactivé d'une manière ou d'une autre. Un font de call-back permet donc d'avoir le texte toujours visible, même pendant le téléchargement ou en cas d'échec de ce dernier.
 - Aucun cache n'a été mis en place, en aprticulier pour les images. Cela pourrait éviter de les télécharger à chaque render et donc avoir un rendu plus rapide.
 - Le code JS n'est pas optimisé, certains fonctions sont probablement beaucoup trop grosse et ralentissent beaucoup tout le rendu du site.
-- Il y a trop chargements "critiques" (qui sont nécessaire pour le rendu), il faudrait en enlever autant que possible, réduire leur taille ou différer certains d'entre eux afin d'accélérer le chargement du site.
+- Il y a trop chargements "critiques" (qui sont nécessaire pour le rendu), il faudrait en enlever autant que possible, réduire leur taille ou différer certains d'entre eux afin d'accélérer le chargement du site. (Utiliser la version minifiée de Jquery par exemple)
 
 Grâce à cet audit, nous pouvons constater plusieurs problèmes majeurs :
 Tout d'abord les performances générales peuvent être améliorées, cela est du aux soucis vus plus haut (calls externes, script non otpimiser, images trop lourdes ect).
@@ -158,8 +158,9 @@ Plusieurs problèmes sont soulignés, certains très importants.
 - Tout d'abord, le site n'utilise pas HTTPS et n'est donc pas sécurisé. La vie privée des utilisateurs n'est pas protégée, le site est particulièrement susceptible aux intrusions diverses, et HTTPS est de nos jours obligatoire pour une majorité des technologies récentes.
 C'est une réelle faille de sécurité qui doit être corrigée.
 - HTTP/2 est une version supérieur à HTTP/1.1, cependant, il faut utiliser HTTPS afin de pouvoir l'utilisée. L'utilisation d'HTTP/2 permet généralement un chargement des pages plu rapide.
-- La version du Jquery utilisée est ancienne et contient des failles de sécurité connues. Le site est donc une fois de plus particulièrement vulnérable.
+- La version du Jquery utilisée est ancienne et contient des failles de sécurité connues, elle n'est pas minifiée vue la taille du call. Le site est donc une fois de plus particulièrement vulnérable.
 - Plusieurs erreurs apparaissent dans la console, montrant que certaines requètes ont échouées, il serait préférable de corriger ces problèmes, mais la priorité n'est pas là.
+- Le site n'est pas du tout responsive. 
 
 La majorité des tests sont passés. En effet, on peut voir qu'il y a 75% des tests effectués qui sont validés.  
 Les améliorations qui sont proposés par le site sont entre autre:
