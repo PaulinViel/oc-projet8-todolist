@@ -312,11 +312,16 @@ Cet audit comparatif est réalisé en comparant les données du site lors de la 
 ![alt text](../img/auditv1.png "Audit v1")  
 
 <br>
+
+Ci-dessus vous pouvez voir l'audit réalisé lors de la réception du projet. On remarque rapidement plusieurs points à améliorer.
+
 <br>
 
 ![alt text](../img/auditv2.png "Audit v2")  
 
 <br>
+
+Ci-dessus vous trouvez l'audit après correction des bugs et améliorations. Tout n'est pas parfait, et nous verrons plus bas en détail ce qui a été fait et ce qu'il reste à améliorer.
 
 <br>
 
