@@ -89,6 +89,10 @@ Après correction :
     
 - Suppression complète de la logique avec les var newId et charset, à la place, nous utilisons Date.now() qui générera un Id unique en fonctionne de la date/heure actuelle (à la milliseconde près).
 
+- Troisième erreur : pas d'Id sur l'input "toggle-all", le "for" du label ne reconnaissait donc pas sa cible, et par conséquent la flèche "Toggle all" ne fonctionnait pas [index.html](index.html) :
+
+`<input class="toggle-all" type="checkbox">` après correction : `<input id="toggle-all" type="checkbox">`
+
 <br>
 
 - En cas de scaling de l'application (utilisations par plusieurs dizaines de personnes sur un même compte par exemple), pour assurer -autant que possible- un Id unique dans le cas ou deux personnes générerait un nouveau todo à la même milliseconde, il est recommandé d'utiliser l'algorithme de Fisher–Yates, qui demande bien plus de ressources mais est l'une des solutions les plus adaptées pour générer un iD unique.
