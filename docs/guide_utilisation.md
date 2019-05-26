@@ -317,3 +317,21 @@ Cet audit comparatif est réalisé en comparant les données du site lors de la 
 ![alt text](../img/auditv2.png "Audit v2")  
 
 <br>
+
+<br>
+
+![alt text](../img/auditAcc.png "Audit accessibility")  
+
+<br>
+
+<br>
+
+![alt text](../img/auditPra.png "Audit bonne pratiques")  
+
+<br>
+
+<br>
+
+![alt text](../img/auditSeo.png "Audit SEO")  
+
+<br>
