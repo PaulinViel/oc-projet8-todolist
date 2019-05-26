@@ -325,15 +325,29 @@ Ci-dessus vous trouvez l'audit après correction des bugs et améliorations. Tou
 
 <br>
 
+<br>
+
+### L'accessibilité
+
+<br>
+
 ![alt text](../img/auditAcc.png "Audit accessibility")  
 
 <br>
+
+- Pour faciliter l'utilisation du site, par les mal/non voyant ainsi que les "robots lecteur", il est important d'avoir un bon niveau de contraste entre les différents éléments du site. Les couleurs choisies ici peuvent évidemment être modifiées, le style n'étant pas parfait, il sera important de voir quel choix faire avec le designer en charge du projet.
+
+- Il est important pour les formulaires et autres inputs d'avoir un label associé, déjà, une fois de plus pour les malvoyants ainsi que les robots, qui se servent du label pour fournir une description adaptée de la fonctionnalité de l'input. Mais aussi pour les robots en ligne qui référence le site.
 
 <br>
 
 ![alt text](../img/auditPra.png "Audit bonne pratiques")  
 
 <br>
+
+- Ici le premier soucis est lié au HTTP/1.1 qui est utilisé en place du HTTP/2. Ce problème est lié au fonctionnement de notre "back-end", je ne me suis malheureusement pas suffisement informé sur le sujet pour apporter une réponse définitive, mais le soucis devrait être réglé lorsque le site sera en ligne sur un vrai hébergeur, celui-ci étant lié au serveur.
+
+- Ici l'erreur 404 a été corrigée. Le soucis est causé par le fait qu'il n'y a pas de favicon.ico, en effet, les navigateurs cherchent par défaut un fichier favicon.ico à la racine du site, si aucun favicon n'est mentionné une erreur 404 sera envoyée. Une favicon temporaire a été mise en place, elle se trouve directement à la root du dossier, il suffira donc de remplacer "favicon.ico" par une autre icone du même nom pour utiliser l'icon souhaitée.
 
 <br>
 
