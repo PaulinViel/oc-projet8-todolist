@@ -164,6 +164,8 @@ Après correction :
        };
 
 - La première boucle for servant simplement à attribuer à todoId la valeur de todos[i].id, celle-ci n'est pas nécessaire vu que la seconde boucle permet d'obtenir le même résultat en utilisant directement l'argument id reçu.
+
+<br>
         
 ## Etape 2 : Où sont les tests ?!
 
@@ -183,11 +185,15 @@ Les différents tests modifiés sont trouvables aux lignes :
 | l.209              | 'should add a new todo to the model'                            | 
 | l.256              | 'should remove an entry from the model'                         | 
 
+<br>
+
 ## Etape 3 : Optimisez la performance
 
 Réalisation d'un audit de performance sur site concurrent -300 à 500 mots-.  
 
 L'audit complet est disponible [ici](docs/audit_concurrent.md).
+
+<br>
 
 ## Etape 4 : Améliorez le projet
 
