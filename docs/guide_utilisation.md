@@ -86,7 +86,7 @@ Pour modifier un todo, double-cliquez sur son titre, vous passerez en mode "édi
 
 <br>
 
-Pour terminer un todo (le marquer complété), il suffit de cliquer sur l'icône à gauche du titre de celui-ci, représenté par un cercle gris. Si vous avez cliqué au bon endroit, la bordure du cercle deviendra plus foncée, une flèche verte apparaîtra au centre de ce dernier, et le titre du todo complété sera barré et rendu plus clair. Vous pouvez annulé la complétion d'un todo en cliquant une fois de plus sur le cercle. 
+Pour terminer un todo (le marquer "complété"), il suffit de cliquer sur l'icône à gauche du titre de celui-ci, représenté par un cercle gris. Si vous avez cliqué au bon endroit, la bordure du cercle deviendra plus foncée, une flèche verte apparaîtra au centre de ce dernier, et le titre du todo complété sera barré et rendu plus clair. Vous pouvez annulé la complétion d'un todo en cliquant une fois de plus sur le cercle. 
 
 <br>
 
@@ -167,11 +167,11 @@ L'arborescence suivante présente l'architecture des dossiers principaux du proj
         SpecRunner.html
 ```
 
-Le dossier js contient le cœur même de l'application. Ce sont ces fichiers qui permettent de gérer entièrement la todo-list dans le fichier index.html .
+Le dossier js contient le cœur de l'application. Ce sont ces fichiers qui permettent de gérer entièrement la todo-list dans le fichier index.html .
 
 Si vous lancez npm install, le dossier node_modules contiendra le framework de test unitaire Jasmine ainsi que la base de Todomvc-common.
 
-Le dossier test contient les fameux tests unitaires qui utilise Jasmine.
+Le dossier test contient les tests unitaires qui utilise Jasmine.
 
 L’application est organisée selon une architecture MVC (Modèle - Vue - Contrôleur) basée sur Todomvc (https://github.com/tastejs/todomvc-common).
 
@@ -179,7 +179,7 @@ L’application est organisée selon une architecture MVC (Modèle - Vue - Contr
  
 #### MVC
 L’objectif de ce pattern est de séparer la logique du code en trois parties distinctes :
-• Model: Il s'occupe de la data, créer, mettre à jour, supprimer ect (dans notre application, c'est le store.js qui enrigistre la data elle-même dans le local storage et le model.js comminque avec le store.js)
+• Model: Il s'occupe de la data, créer, mettre à jour, supprimer ect (dans notre application, c'est le store.js qui enrigistre la data elle-même dans le local storage et le model.js communique avec le store.js)
 • View: Elle a accès au DOM et est utilisée pour mettre en place les event handlers tel que les "clicks" c'est aussi elle qui met en place l'HTML en communiquant avec notre template.js. 
 • Controller: C'est la glue entre le model et la view, il s'occupe des changements causés par l'utilisateur et envoie l'information au model.js ou à la view.js (voir aux deux) afin de mettre à jour l'application.
 
@@ -305,7 +305,7 @@ etc...
 
 <br>
 
-Cet audit comparatif est réalisé en comparant les données du site lors de la reprise du projet, et les données après les correctifs. L'amélioration au niveau des performances est minime, en effet, a part les quelques bugs qui ont été corrigés, l'application était déjà très légère et performante. Les principales amélioration se sont donc axées sur l'accessibilité, les bonnes pratiques, et les SEO.
+Cet audit comparatif est réalisé en comparant les données du site lors de la reprise du projet, et les données après les correctifs. L'amélioration au niveau des performances est minime, en effet, à part les quelques bugs qui ont été corrigés, l'application était déjà très légère et performante. Les principales améliorations se sont donc axées sur l'accessibilité, les bonnes pratiques, et les SEO.
 
 <br>
 
@@ -345,7 +345,7 @@ Ci-dessus vous trouvez l'audit après correction des bugs et améliorations. Tou
 
 <br>
 
-- Ici le premier soucis est lié au HTTP/1.1 qui est utilisé en place du HTTP/2. Ce problème est lié au fonctionnement de notre "back-end", je ne me suis malheureusement pas suffisement informé sur le sujet pour apporter une réponse définitive, mais le soucis devrait être réglé lorsque le site sera en ligne sur un vrai hébergeur, celui-ci étant lié au serveur (Important, ne pase utiliser HTTP/2 empêche l'utilisation d'HTTPS, et ouvre un grand nombre de failles de sécurité).
+- Ici le premier soucis est lié au HTTP/1.1 qui est utilisé en place du HTTP/2. Ce problème est lié au fonctionnement de notre "back-end", je ne me suis malheureusement pas suffisement informé sur le sujet pour apporter une réponse définitive, mais le soucis devrait être réglé lorsque le site sera en ligne sur un vrai hébergeur, celui-ci étant lié au serveur (Important, ne pas utiliser HTTP/2 empêche l'utilisation d'HTTPS, et ouvre un grand nombre de failles de sécurité).
 
 - Ici l'erreur 404 a été corrigée. Le soucis est causé par le fait qu'il n'y a pas de favicon.ico, en effet, les navigateurs cherchent par défaut un fichier favicon.ico à la racine du site, si aucun favicon n'est mentionné une erreur 404 sera envoyée. Une favicon temporaire a été mise en place, elle se trouve directement à la root du dossier, il suffira donc de remplacer "favicon.ico" par une autre icone du même nom pour utiliser l'icon souhaitée.
 
