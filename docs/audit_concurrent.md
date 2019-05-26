@@ -66,7 +66,7 @@ Second rapport (LightHouse):
 
 - Ici nous pouvons voir en partie d'ou vient ce temps de début d'affichage : les scripts et les images.
 
-Dans la répartition du poids du ralentissement, le premier coupable est le script, il est clairement nécessaire de réduire sa taille et de l'optimiser autant que possible. Le second coupable est les images, il pourrait déjà etre utile de combiner les petites images dans une sprite CSS pour réduire le nombre de fichiers que le navigateur doit télécharger et donc accélèrer donc le chargement. On constate aussi que beaucoup d'images sont appelées par des requêtes externes, ce qui ralentis évidemment beaucoup le chargement du site. Si possible il vaudrait mieux les héberger dans le back-end si possible afin de limiter les calls externes. Pour les images non externes, il faudrait étudier la possibilité de les compresser, ou de changer leur format vers quelque chose de plus léger et optimiser
+Dans la répartition du poids du ralentissement, le premier coupable est le script, il est clairement nécessaire de réduire sa taille et de l'optimiser autant que possible. Le second coupable est les images, il pourrait déjà etre utile de combiner les petites images dans une sprite CSS pour réduire le nombre de fichiers que le navigateur doit télécharger et donc accélèrer donc le chargement. On constate aussi que beaucoup d'images sont appelées par des requêtes externes, ce qui ralentis évidemment beaucoup le chargement du site. Si possible il vaudrait mieux les héberger dans le back-end afin de limiter les calls externes. Pour les images non externes, il faudrait étudier la possibilité de les compresser, ou de changer leur format vers quelque chose de plus léger et optimiser
 
 Il serait aussi très utile d'utiliser un système de mise en cache des différentes images permettra de gagner encore plus de temps. 
 
@@ -78,7 +78,7 @@ Il serait aussi très utile d'utiliser un système de mise en cache des différe
 
 - Dans ce tableau reprenant la répartition par domaines nous constatons plusieurs problèmes .
 
-Premièrement, Jquery est chargé à chaque fois, plusieurs solutions sont possible : une mise à jour de Jquery -les version plus récentes sont bien plus performantes-, utiliser un fichier minifier -celui-ci étant moins lourd, le call sera plus rapide- ou utiliser du JavaScript ce qui éliminerait tout simplement le besoin de Jquery mais demanderait du temps de développemennt supplémentaire.
+Premièrement, Jquery est bien trop lourd, plusieurs solutions sont possible : une mise à jour de Jquery -les version plus récentes sont bien plus performantes-, utiliser un fichier minifier -celui-ci étant moins lourd, le call sera plus rapide- ou utiliser du JavaScript ce qui éliminerait tout simplement le besoin de Jquery mais demanderait du temps de développemennt supplémentaire.
 
 Deuxièmement, nous constatons qu'il y a beaucoup de calls externes dont l'utilité n'est pas assurée et qui ralentissent beaucoup le site pour un gain possiblement très faible. En particulier les calls automatiques vers les réseaux sociaux et tout les service Google. Si tout ces calls externes sont réellement essentiel, peut être pourrait-il être envisageable de déclencher certains d'entre eux grace a des évènements particulier et non systématiquement au chargement. Le mieux serait évidemment de réduire leur nombre.
 
@@ -125,7 +125,9 @@ Visiblement, des améliorations sont possibles !
 
 Grâce à cet audit, nous pouvons constater plusieurs problèmes majeurs :
 Tout d'abord les performances générales peuvent être améliorées, cela est du aux soucis vus plus haut (calls externes, script non otpimiser, images trop lourdes ect).
+
 <br>
+
 <br>
 
 **Accessibilité**
@@ -142,7 +144,9 @@ Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail no
 - Le résultat du test nous apprend aussi que certains Id ne sont pas uniques (en particulier dans des formulaires, tableaux ect), ce qui peut être problématique pour les bots en ligne par exemple, qui sauteront le 2nd id trouvé, seulement le premier sera "indexé". D'un point de vue code cela est aussi problématique et peut engendrer des dysfonctionnements.
 - Il est aussi préférable d'attribuer un lang attribut au tag html, afin de référencer le langage principal utilisé.
 - Nous constatons aussi que plusieurs images n'ont pas de alt attribut. Cet attribut permet par exemple d'aider à l'indexation dans les SEO (Search Engine Optimization), mais aussi de donner une description de l'image dans le cas ou celle-ci ne charge pas, ou encore pour les screen reader des non voyants. Même chose pour les formulaire et leur labels associés, ces labels ont le même intéret que les alt tags pour les images.
+
 <br>
+
 <br>
 
 **Bonnes pratiques**
