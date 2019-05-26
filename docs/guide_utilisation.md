@@ -299,12 +299,13 @@ etc...
 
 <br>
 
-
 ****
 
 ## Audits comparatifs: 
 
-****
+<br>
+
+Cet audit comparatif est réalisé en comparant les données du site lors de la reprise du projet, et les données après les correctifs. L'amélioration au niveau des performances est minime, en effet, a part les quelques bugs qui ont été corrigés, l'application était déjà très légère et performante. Les principales amélioration se sont donc axées sur l'accessibilité, les bonnes pratiques, et les SEO.
 
 <br>
 
