@@ -95,24 +95,31 @@ Résumé des points à modifier pour améliorer la performance du site :
 - Retravailler les images (réduire la taille, compresser, changer de format)
 - Supprimer autant que possible les calls externes vers d'autres plateformes, ou au pire ne les déclencher que quand cela est nécessaire et non à chaque chargement.
 
+<br> 
+
+****
 
 ## Audit du site
 
+<br>
+
 **Resumé**
-***
+
+<br>
 
 Audit Lighthouse (extension Chrome) : 
+
 <br>
 
 ![alt text](../img/auditresume.png "audit resume")
 
 <br>
+
 Visiblement, des améliorations sont possibles ! 
-<br>
+
 <br>
 
 **Performances**
-***
 
 <br>
 
@@ -135,7 +142,6 @@ Tout d'abord les performances générales peuvent être améliorées, cela est d
 <br>
 
 **Accessibilité**
-***
 
 <br>
 
@@ -154,7 +160,6 @@ Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail no
 <br>
 
 **Bonnes pratiques**
-***
 
 <br>
 
@@ -175,11 +180,12 @@ Les améliorations qui sont proposés par le site sont entre autre:
 * Utiliser le cache du navigateur pour les fichiers qui sont long à charger (telle que les images),
 * Enlever le CSS inutile,
 * Utiliser des images au bon format et au bon poids.  
+
 <br>
+
 <br>
 
 **SEO (Search Engine Optimization)**
-***
 
 <br>
 
@@ -191,11 +197,12 @@ Une fois encore, plusieurs problèmes sont mis en avant, en particulier pour le 
 - Pas de "viewport" metatag défini, par conséquent un utilisateur sur mobile aura une page adaptée pour desktop, ce qui évidemment n'est pas une bonne chose. Ce metatag permet donc d'adapter l'image entre les différentes t'ailles d'écran, sans même parler de responsive, cela permet au moins d'adapter correctement la page aux différents appareils et dimensions utilisés (ipad, ipadPro, les différentes tailles de mobiles mais aussi desktop).
 - Certaines polices sont trop petites, en particulier sur mobile, on considère que pour lire ce qui est en dessous de 12px de font-size l'utilisateur est obligé de zoomer pour lire correctement, son expérience en est donc impactée.
 - Et enfin les boutons et autres champs intéractibles sont aussi trop petits sur mobile.
+
 <br>
+
 <br>
 
 **Application Web Progressive**
-***
 
 Notre concurrent n'a clairement pas mis en place une progressive web app, l'audit ne le traitant même pas.
 Cela étant, une progresive pourrait apporter des avantages non négligeable dans l'optique de scale notre application : 
@@ -205,21 +212,26 @@ Cela étant, une progresive pourrait apporter des avantages non négligeable dan
 - Charge même plus vite sur mobile que pc, les assets étant installés sur le téléphone.
 
 <br>
+
 <br>
-
-
-## Résumé
 
 ****
 
+## Résumé
+
+<br>
+
 Après cette étude du site de notre concurrent, nous pouvons mettre en avant plusieurs points de comparaison sur les choses à faire et à ne pas faire en cas de scaling de notre application. 
+
 <br>
+
 Cette liste est bien sûr non exhaustive, les améliorations possible étant "infinie" et dépendant des besoins du client. Elle représente cependant un bon guide des choses à prendre en compte en vue d'un scaling progressif visant à garder à jour un site aussi user friendly et sécurisé que possible.
+
 <br>
+
 <br>
 
 **A faire**
-***
 
 <br>
 
@@ -229,11 +241,12 @@ Cette liste est bien sûr non exhaustive, les améliorations possible étant "in
 - Améliorer l'accessibilité d'une manière générale (contraste, taille de police, tags)
 - Améliorer l'utilisation mobile et le côté responsive
 - Mettre en place la PWA
+
 <br>
+
 <br>
 
 **A ne pas faire**
-***
 
 <br>
 
