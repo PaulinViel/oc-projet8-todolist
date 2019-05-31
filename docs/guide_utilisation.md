@@ -190,7 +190,7 @@ Initialisation de l'application, création de la base de données, du controller
 - setView() : gère le chargement de la view en fonction de l'url actuelle. Cette fonction est appelée au chargement de la page, mais également lorsque le hashtag de l'url change ("All", "Active", "Completed").
 
 #### store.js
-Ce fichier va créer une nouvel objet base de données qui sera stockée dans le LocalStorage du navigateur. Ces méthodes ne sont appelées que dans le fichier model.js (Comme vu précédemment, il n'ya a que le controller qui intéragit avec la data).
+Ce fichier va créer une nouvel objet base de données qui sera stockée dans le LocalStorage du navigateur. Ces méthodes ne sont appelées que dans le fichier model.js.
 
 - Store : Créé une nouvelle instance de la base de données dans le LocalStorage du navigateur, si elle n'existe pas déjà.
 - Store.prototype.find : Récupère un item dans la base de données.
