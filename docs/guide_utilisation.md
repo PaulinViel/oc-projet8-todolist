@@ -186,8 +186,8 @@ L’objectif de ce pattern est de séparer la logique du code en trois parties d
 #### App.js
 Initialisation de l'application, création de la base de données, du controller, etc... Il gère aussi la mise à jour de la view au chargement de la page ou à chaque changement d'url.
 
-- Todo() : met en place la todo-list "todos-vaillajs" qui sera stockée dans le LocalStorage du navigateur. Elle crée une instance du model qui permettra d'intéragir avec les données. Le template html de base d'un todo est définit ici, et la view par défaut est attachée à ce template. (dans ce projet, la view ne contient pas de HTML, tout est dans le template.js) Le controller fait alors le lien entre le model et la view.
-- setView() : gère le chargement de la view en fonction de l'url actuelle. Cette fonction est appelée au chargement de la page, mais également lorsque le hashtag de l'url change ("All", "Active", "Completed").
+- Todo : met en place la todo-list "todos-vaillajs" qui sera stockée dans le LocalStorage du navigateur. Elle crée une instance du model qui permettra d'intéragir avec les données. Le template html de base d'un todo est définit ici, et la view par défaut est attachée à ce template. (dans ce projet, la view ne contient pas de HTML, tout est dans le template.js) Le controller fait alors le lien entre le model et la view.
+- setView : gère le chargement de la view en fonction de l'url actuelle. Cette fonction est appelée au chargement de la page, mais également lorsque le hashtag de l'url change ("All", "Active", "Completed").
 
 #### store.js
 Ce fichier va créer une nouvel objet base de données qui sera stockée dans le LocalStorage du navigateur. Ces méthodes ne sont appelées que dans le fichier model.js.
