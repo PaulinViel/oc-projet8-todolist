@@ -179,9 +179,9 @@ L’application est organisée selon une architecture MVC (Modèle - Vue - Contr
  
 #### MVC
 L’objectif de ce pattern est de séparer la logique du code en trois parties distinctes :
-• Model: Il s'occupe de la data, créer, mettre à jour, supprimer ect (dans notre application, c'est le store.js qui enrigistre la data elle-même dans le local storage et le model.js communique avec le store.js)
-• View: Elle a accès au DOM et est utilisée pour mettre en place les event handlers tel que les "clicks" c'est aussi elle qui met en place l'HTML en communiquant avec notre template.js. 
-• Controller: C'est la glue entre le model et la view, il s'occupe des changements causés par l'utilisateur et envoie l'information au model.js ou à la view.js (voir aux deux) afin de mettre à jour l'application.
+- Model: Il s'occupe de la data, créer, mettre à jour, supprimer ect (dans notre application, c'est le store.js qui enrigistre la data elle-même dans le local storage et le model.js communique avec le store.js)
+- View: Elle a accès au DOM et est utilisée pour mettre en place les event handlers tel que les "clicks" c'est aussi elle qui met en place l'HTML en communiquant avec notre template.js. 
+- Controller: C'est la glue entre le model et la view, il s'occupe des changements causés par l'utilisateur et envoie l'information au model.js ou à la view.js (voir aux deux) afin de mettre à jour l'application.
 
 #### App.js
 Initialisation de l'application, création de la base de données, du controller, etc... Il gère aussi la mise à jour de la view au chargement de la page ou à chaque changement d'url.
