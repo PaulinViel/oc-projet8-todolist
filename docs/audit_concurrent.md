@@ -167,14 +167,14 @@ Ensuite l'accessibilité laisse à désirer. Regarder l'audit plus en détail no
 Plusieurs problèmes sont soulignés, certains très importants.
 - Tout d'abord, le site n'utilise pas HTTPS et n'est donc pas sécurisé. La vie privée des utilisateurs n'est pas protégée, le site est particulièrement susceptible aux intrusions diverses, et HTTPS est de nos jours obligatoire pour une majorité des technologies récentes.
 C'est une réelle faille de sécurité qui doit être corrigée.
-- HTTP/2 est une version supérieur à HTTP/1.1, cependant, il faut utiliser HTTPS afin de pouvoir l'utilisée. L'utilisation d'HTTP/2 permet généralement un chargement des pages plu rapide.
+- HTTP/2 est une version supérieur à HTTP/1.1, cependant, il faut utiliser HTTPS afin de pouvoir l'utilisée. L'utilisation d'HTTP/2 permet généralement un chargement des pages plus rapide.
 - La version du Jquery utilisée est ancienne et contient des failles de sécurité connues, elle n'est pas minifiée vue la taille du call. Le site est donc une fois de plus particulièrement vulnérable.
 - Plusieurs erreurs apparaissent dans la console, montrant que certaines requètes ont échouées, il serait préférable de corriger ces problèmes, mais la priorité n'est pas là.
 
 La majorité des tests sont passés. En effet, on peut voir qu'il y a 75% des tests effectués qui sont validés.  
 Les améliorations qui sont proposés par le site sont entre autre:
-* Utiliser le cache du navigateur pour les fichiers qui sont long à charger (telle que les images),
-* Enlever le CSS inutile,
+* Utiliser le cache du navigateur pour les fichiers qui sont long à charger (telle que les images).
+* Enlever le CSS inutile.
 * Utiliser des images au bon format et au bon poids.  
 
 <br>
