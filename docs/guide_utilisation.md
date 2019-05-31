@@ -363,7 +363,10 @@ Ces 3 problèmes sont liés au manque de metatag, qui empêche l'application d'�
 <br>
 
 Les problèmes principaux empêchant une utilisation optimale de l'application ont donc été résolus.
-Dans le cas on l'on souhaiterait continuer à améliorer l'application, on passerait à l'ajout de nouvelles fonctionnalités (système de comptes, calendier, PWA ect) et il faudrait donc prévoir un temps de développement non négligeable, tout en réfléchissant aux impacts du scaling qui ont été vus précédemment. 
-Nous avons maintenant une bonne base stable pour construire la suite de l'application.
+Dans le cas on l'on souhaiterait continuer à améliorer l'application, on passerait à l'ajout de nouvelles fonctionnalités (système de comptes, calendier, PWA ect) et il faudrait donc prévoir un temps de développement non négligeable, tout en réfléchissant aux impacts du scaling qui ont été vus précédemment.
+
+<br>
+
+Nous avons dorénavant une base stable pour construire la suite de l'application dans les meilleures conditions !
 
 <br>
