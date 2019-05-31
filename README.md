@@ -100,7 +100,7 @@ Après correction :
 
 <br>
 
-- En cas de scaling de l'application (utilisations par plusieurs dizaines de personnes sur un même compte par exemple), pour assurer -autant que possible- un Id unique dans le cas ou deux personnes générerait un nouveau todo à la même milliseconde, il est recommandé d'utiliser l'algorithme de Fisher–Yates, qui demande bien plus de ressources mais est l'une des solutions les plus adaptées pour générer un iD unique.
+- En cas de scaling de l'application (utilisations par plusieurs dizaines de personnes sur un même compte par exemple), pour assurer -autant que possible- un Id unique dans le cas ou deux personnes générerait un nouveau todo à la même milliseconde, il est possible d'utiliser par exemple l'algorithme de Fisher–Yates, qui demande bien plus de ressources mais est l'une des solutions les plus adaptées pour générer un iD unique. On peut aussi envisager d'ajouter d'utiliser Date.now() avec en plus une variable similaire à celle utilisée à l'orogine. Ou encore en fonction de la base de données un simple Id auto-incrémental.
 
 <br>
 
