@@ -14,7 +14,7 @@ Après correction :
 
 <br>
 
-- Deuxième erreur : pas d'Id sur l'input "toggle-all", le "for" du label ne reconnaissait donc pas sa cible, et par conséquent la flèche "Toggle all" ne fonctionnait pas [index.html](index.html) :
+- Deuxième erreur : pas d'Id sur l'input "toggle-all", le "for" du label ne reconnaissait donc pas sa cible, et par conséquent la flèche "Toggle all" ne fonctionnait pas. Dans le fichier [index.html](index.html) :
 
 `<input class="toggle-all" type="checkbox">` après correction : `<input id="toggle-all" type="checkbox">`
 
