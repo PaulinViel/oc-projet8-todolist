@@ -110,71 +110,72 @@ describe('controller', function () {
         });
     });
 
-    it('should show the content block when todos exists', function () {
-        setUpModel([{title: 'my todo', completed: true}]);
+    describe('activate element', function () {
+        it('should show the content block when todos exists', function () {
+            setUpModel([{title: 'my todo', completed: true}]);
 
-        subject.setView('');
+            subject.setView('');
 
-        expect(view.render).toHaveBeenCalledWith('contentBlockVisibility', {
-            visible: true
+            expect(view.render).toHaveBeenCalledWith('contentBlockVisibility', {
+                visible: true
+            });
         });
-    });
 
-    it('should hide the content block when no todos exists', function () {
-        setUpModel([]);
+        it('should hide the content block when no todos exists', function () {
+            setUpModel([]);
 
-        subject.setView('');
+            subject.setView('');
 
-        expect(view.render).toHaveBeenCalledWith('contentBlockVisibility', {
-            visible: false
+            expect(view.render).toHaveBeenCalledWith('contentBlockVisibility', {
+                visible: false
+            });
         });
-    });
 
-    it('should check the toggle all button, if all todos are completed', function () {
-        setUpModel([{title: 'my todo', completed: true}]);
+        it('should check the toggle all button, if all todos are completed', function () {
+            setUpModel([{title: 'my todo', completed: true}]);
 
-        subject.setView('');
+            subject.setView('');
 
-        expect(view.render).toHaveBeenCalledWith('toggleAll', {
-            checked: true
+            expect(view.render).toHaveBeenCalledWith('toggleAll', {
+                checked: true
+            });
         });
-    });
 
-    it('should set the "clear completed" button', function () {
-        var todo = {id: 42, title: 'my todo', completed: true};
-        setUpModel([todo]);
+        it('should set the "clear completed" button', function () {
+            var todo = {id: 42, title: 'my todo', completed: true};
+            setUpModel([todo]);
 
-        subject.setView('');
+            subject.setView('');
 
-        expect(view.render).toHaveBeenCalledWith('clearCompletedButton', {
-            completed: 1,
-            visible: true
+            expect(view.render).toHaveBeenCalledWith('clearCompletedButton', {
+                completed: 1,
+                visible: true
+            });
         });
-    });
 
-    it('should highlight "All" filter by default', function () {
-        // TODO: write test
-        var todo = [{id: 42, title: 'my todo', completed: true},
-            {id: 43, title: 'my second todo', completed: false}]
+        it('should highlight "All" filter by default', function () {
+            // TODO: write test
+            var todo = [{id: 42, title: 'my todo', completed: true},
+                {id: 43, title: 'my second todo', completed: false}]
 
-        setUpModel([todo])
+            setUpModel([todo])
 
-        subject.setView('')
+            subject.setView('')
 
-        expect(view.render).toHaveBeenCalledWith('setFilter', '')
-    });
+            expect(view.render).toHaveBeenCalledWith('setFilter', '')
+        });
 
-    it('should highlight "Active" filter when switching to active view', function () {
-        // TODO: write test
-        var todo = [{id: 42, title: 'my todo', completed: true},
-            {id: 43, title: 'my second todo', completed: false}]
-        setUpModel([todo])
+        it('should highlight "Active" filter when switching to active view', function () {
+            // TODO: write test
+            var todo = [{id: 42, title: 'my todo', completed: true},
+                {id: 43, title: 'my second todo', completed: false}]
+            setUpModel([todo])
 
-        subject.setView('#/active')
+            subject.setView('#/active')
 
-        expect(view.render).toHaveBeenCalledWith('setFilter', 'active')
-    });
-
+            expect(view.render).toHaveBeenCalledWith('setFilter', 'active')
+        });
+    })
     describe('toggle all', function () {
         it('should toggle all todos to completed', function () {
             // TODO: write test
@@ -199,8 +200,8 @@ describe('controller', function () {
             subject.setView('')
             view.trigger('toggleAll', {completed: true})
 
-            expect(view.render).toHaveBeenCalledWith('elementComplete', {id:42, completed: true});
-            expect(view.render).toHaveBeenCalledWith('elementComplete', {id:43, completed: true});
+            expect(view.render).toHaveBeenCalledWith('elementComplete', {id: 42, completed: true});
+            expect(view.render).toHaveBeenCalledWith('elementComplete', {id: 43, completed: true});
         });
     });
 
